@@ -1,0 +1,17 @@
+site_name:  太阳活动区非线性无力场3D数据集 #The Dataset of Non-Linear Force-Free Fields of Sun
+nav:
+    - 简介: 'index.md'
+    - 原始数据及抽样: 'rawdata.md'
+    - 数据预处理及计算: 'process.md'
+    - 产品数据及使用: 'product.md'
+    - 工具包: 'tool.md'
+    - 数据支持: 'support.md'
+    - 成果与引用: 'citation.md'
+theme: readthedocs
+extra_javascript: 
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+# markdown_extensions:
+#     - mdx_math
+
+#https://www.mkdocs.org/user-guide/writing-your-docs/#configure-pages-and-navigation
