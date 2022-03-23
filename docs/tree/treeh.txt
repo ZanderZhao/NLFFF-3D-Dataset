@@ -110,6 +110,8 @@ nlfff-data-2022
 │   ├── grid3.done.treeL2.log
 │   ├── grid3.done.tree.log
 │   ├── grid3.done.Bout.sha256sum.log   # sha256sum Bout.bin 的日志
+│   ├── num_0000_0099
+│   ├── num_0100_0199
 │   ├── num_1100_1199                   # sharpnum 所属的序号范围
 │   │   ├── hmi.sharp_cea_720s.1126.20111205_000000_TAI
 │   │   │   ├── allboundaries1.dat
