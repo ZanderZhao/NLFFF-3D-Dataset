@@ -4,15 +4,15 @@
 
 ### Bp.fits
 
-TODO
+http://jsoc.stanford.edu/doc/data/hmi/sharp/sharp.htm
 
 ### Bt.fits
 
-TODO
+http://jsoc.stanford.edu/doc/data/hmi/sharp/sharp.htm
 
 ### Br.fits
 
-TODO
+http://jsoc.stanford.edu/doc/data/hmi/sharp/sharp.htm
 
 
 
@@ -66,11 +66,11 @@ TODO
 
 ### Bout.bin
 
-| 参数     | 信息               |
-| -------- | ------------------ |
-| 是否保存 | 全部保存           |
-| 具体包括 | Bout.bin           |
-| 文件含义 | 非线性无力场3D数据 |
+| 参数     | 信息                                                         |
+| -------- | ------------------------------------------------------------ |
+| 是否保存 | 全部保存                                                     |
+| 具体包括 | Bout.bin                                                     |
+| 文件含义 | 非线性无力场3D数据，其nx，ny，nz尺寸与gridx.ini一致，x取1，2或3取决于该数据最后跑到第几层 |
 
 #### 数据格式
 
