@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    
+    <title>产品使用 - 太阳活动区非线性无力场3D数据集</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="..">太阳活动区非线性无力场3D数据集</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">简介</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../search/">搜索</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../process/">数据处理</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="./">产品使用</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../tool/">工具包</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../support/">数据支持</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../citation/">成果引用</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../process/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../tool/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#_1">产品数据及使用</a></li>
+            <li class="second-level"><a href="#_2">原始数据</a></li>
+                
+                <li class="third-level"><a href="#bpfits">Bp.fits</a></li>
+                <li class="third-level"><a href="#btfits">Bt.fits</a></li>
+                <li class="third-level"><a href="#brfits">Br.fits</a></li>
+            <li class="second-level"><a href="#_3">预处理数据文件</a></li>
+                
+                <li class="third-level"><a href="#gridini">grid.ini</a></li>
+                <li class="third-level"><a href="#allboundariesdat">allboundaries.dat</a></li>
+                <li class="third-level"><a href="#maskdat">mask.dat</a></li>
+                <li class="third-level"><a href="#boundaryini">boundary.ini</a></li>
+            <li class="second-level"><a href="#_4">产品数据文件</a></li>
+                
+                <li class="third-level"><a href="#boutbin">Bout.bin</a></li>
+                <li class="third-level"><a href="#b0bin">B0.bin</a></li>
+                <li class="third-level"><a href="#runlog">run.log</a></li>
+                <li class="third-level"><a href="#nlfffqualitylog">NLFFFquality.log</a></li>
+                <li class="third-level"><a href="#energylog">Energy.log</a></li>
+                <li class="third-level"><a href="#protlog">prot.log</a></li>
+                <li class="third-level"><a href="#steplog">step.log</a></li>
+                <li class="third-level"><a href="#zboundaries2n2dat">zboundaries2n2.dat</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="_1">产品数据及使用</h1>
+<h2 id="_2">原始数据</h2>
+<h3 id="bpfits">Bp.fits</h3>
+<p>http://jsoc.stanford.edu/doc/data/hmi/sharp/sharp.htm</p>
+<h3 id="btfits">Bt.fits</h3>
+<p>http://jsoc.stanford.edu/doc/data/hmi/sharp/sharp.htm</p>
+<h3 id="brfits">Br.fits</h3>
+<p>http://jsoc.stanford.edu/doc/data/hmi/sharp/sharp.htm</p>
+<h2 id="_3">预处理数据文件</h2>
+<h3 id="gridini">grid.ini</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否保存</td>
+<td>全部保存</td>
+</tr>
+<tr>
+<td>具体包括</td>
+<td>grid1.ini，grid2.ini，grid3.ini</td>
+</tr>
+<tr>
+<td>文件含义</td>
+<td>存储二维的nx，ny边界大小；<br />存储nz想要计算高度的大小，其中nx，ny，nz为同一比例尺；<br />nd存储缓冲区大小；<br />mu无实际意义，兼容以前版本</td>
+</tr>
+</tbody>
+</table>
+<h3 id="allboundariesdat">allboundaries.dat</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否保存</td>
+<td>全部保存</td>
+</tr>
+<tr>
+<td>具体包括</td>
+<td>allboundaries1.dat，allboundaries2.dat，allboundaries3.dat</td>
+</tr>
+<tr>
+<td>文件含义</td>
+<td>转换存储fits二维的Bp，Bt，Br二维数据</td>
+</tr>
+</tbody>
+</table>
+<h3 id="maskdat">mask.dat</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否保存</td>
+<td>全部保存</td>
+</tr>
+<tr>
+<td>具体包括</td>
+<td>mask1.dat，mask2.dat，mask3.dat</td>
+</tr>
+<tr>
+<td>文件含义</td>
+<td>存储计算需要的error mask</td>
+</tr>
+</tbody>
+</table>
+<h3 id="boundaryini">boundary.ini</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否保存</td>
+<td>全部保存</td>
+</tr>
+<tr>
+<td>具体包括</td>
+<td>boundary.ini</td>
+</tr>
+<tr>
+<td>文件含义</td>
+<td>存储计算需要的error mask等基本信息</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">产品数据文件</h2>
+<h3 id="boutbin">Bout.bin</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否保存</td>
+<td>全部保存</td>
+</tr>
+<tr>
+<td>具体包括</td>
+<td>Bout.bin</td>
+</tr>
+<tr>
+<td>文件含义</td>
+<td>非线性无力场3D数据，其nx，ny，nz尺寸与gridx.ini一致，x取1，2或3取决于该数据最后跑到第几层</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_5">数据格式</h4>
+<h5 id="_6">理解角度</h5>
+<p><img alt="bout_thin.drawio" src="../assets/img/bout_think.drawio.svg" /></p>
+<h5 id="_7">存储角度</h5>
+<p>整体是一个<code>3*nx*ny*nz</code>的浮点二进制数组，与c语言数组存储方式一致，即nz变化最快。</p>
+<p><img alt="bout_store.draw" src="../assets/img/bout_store.draw.svg" /></p>
+<h3 id="b0bin">B0.bin</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否保存</td>
+<td>部分保存</td>
+</tr>
+<tr>
+<td>具体包括</td>
+<td>B0.bin</td>
+</tr>
+<tr>
+<td>文件含义</td>
+<td>势场3D数据</td>
+</tr>
+</tbody>
+</table>
+<h3 id="runlog">run.log</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否保存</td>
+<td>全部保存</td>
+</tr>
+<tr>
+<td>具体包括</td>
+<td>run.log</td>
+</tr>
+<tr>
+<td>文件含义</td>
+<td>运行日志，包含运行平台、计算数据、算法输出日志等信息</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nlfffqualitylog">NLFFFquality.log</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否保存</td>
+<td>全部保存</td>
+</tr>
+<tr>
+<td>具体包括</td>
+<td>NLFFFquality1.log、NLFFFquality2.log、NLFFFquality3.log</td>
+</tr>
+<tr>
+<td>文件含义</td>
+<td>数据质量</td>
+</tr>
+</tbody>
+</table>
+<h3 id="energylog">Energy.log</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否保存</td>
+<td>全部保存</td>
+</tr>
+<tr>
+<td>具体包括</td>
+<td>Energy.log</td>
+</tr>
+<tr>
+<td>文件含义</td>
+<td>TODO</td>
+</tr>
+</tbody>
+</table>
+<h3 id="protlog">prot.log</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否保存</td>
+<td>全部保存</td>
+</tr>
+<tr>
+<td>具体包括</td>
+<td>prot1.log、prot2.log、prot3.log</td>
+</tr>
+<tr>
+<td>文件含义</td>
+<td>TODO</td>
+</tr>
+</tbody>
+</table>
+<h3 id="steplog">step.log</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否保存</td>
+<td>全部保存</td>
+</tr>
+<tr>
+<td>具体包括</td>
+<td>step1.log、step2.log、step3.log</td>
+</tr>
+<tr>
+<td>文件含义</td>
+<td>TODO</td>
+</tr>
+</tbody>
+</table>
+<h3 id="zboundaries2n2dat">zboundaries2n2.dat</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否保存</td>
+<td>全部保存</td>
+</tr>
+<tr>
+<td>具体包括</td>
+<td>zboundaries2n2.dat</td>
+</tr>
+<tr>
+<td>文件含义</td>
+<td>TODO</td>
+</tr>
+</tbody>
+</table></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../assets/js/mathjax.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

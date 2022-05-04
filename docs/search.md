@@ -1,5 +1,5 @@
 # 在线搜索
-> 若下方无法正常访问，请尝试打开[此页面](/nlfffsearch/),或在**数据支持**页面获取更多信息和帮助。
+> 若下方无法正常访问，请尝试打开[此页面](/nlfffsearch/)，或在[数据支持](/support/)页面获取更多信息和帮助。
 
 <iframe src="/nlfffsearch/" width="100%" height="800"></iframe> 
 

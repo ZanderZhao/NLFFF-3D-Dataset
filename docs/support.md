@@ -4,12 +4,14 @@
 
 ### 数据搜索
 
-[在线搜索](/search/)
+[在线搜索 源1](/search/)
+
+[在线搜索 源2](https://nlfffdataset.ucas.project.zlogs.net/nlfffsearch/)
 
 
 ### 批量数据使用申请
 
-徐龙(数据申请) `lxu@(at)nao.cas.cn` 
+徐龙(数据申请) `lxu(at)nao.cas.cn` 
  
 黄鑫(技术支持) `xhuang(at)bao.ac.cn`
 

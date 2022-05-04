@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    
+    <title>数据处理 - 太阳活动区非线性无力场3D数据集</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="..">太阳活动区非线性无力场3D数据集</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">简介</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../search/">搜索</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="./">数据处理</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../product/">产品使用</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../tool/">工具包</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../support/">数据支持</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../citation/">成果引用</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../search/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../product/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#_1">数据预处理及计算</a></li>
+            <li class="second-level"><a href="#_2">原始数据及抽样</a></li>
+                
+            <li class="second-level"><a href="#_3">预处理</a></li>
+                
+                <li class="third-level"><a href="#_4">整体流程</a></li>
+                <li class="third-level"><a href="#_5">流程细节</a></li>
+            <li class="second-level"><a href="#_6">计算</a></li>
+                
+                <li class="third-level"><a href="#_7">整体流程</a></li>
+                <li class="third-level"><a href="#_8">流程细节</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="_1">数据预处理及计算</h1>
+<p>数据处理需要经过预处理和三重网格计算两个步骤。</p>
+<p><img alt="preprocess.drawio" src="../assets/img/pc.drawio.svg" /></p>
+<h2 id="_2">原始数据及抽样</h2>
+<p>原始数据基于<a href="https://docs.sunpy.org/projects/drms/en/stable/">drms</a>工具包下载<a href="http://jsoc.stanford.edu/ajax/lookdata.html?ds=hmi.sharp_cea_720s">HMI活动区补丁矢量场数据</a>，抽样规则如下：</p>
+<table>
+<thead>
+<tr>
+<th>2022年第一批计算信息</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>时间范围</td>
+<td>2010年-2019年</td>
+</tr>
+<tr>
+<td>活动区序号范围</td>
+<td>1-7400</td>
+</tr>
+<tr>
+<td>时间间隔</td>
+<td>96分钟</td>
+</tr>
+<tr>
+<td>数据类型</td>
+<td>Bp，Bt，Br</td>
+</tr>
+<tr>
+<td>TODO其他规则</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>例子</p>
+<pre><code>hmi.sharp_cea_720s.4225.20140617_142400_TAI.Bp.fits
+hmi.sharp_cea_720s.4225.20140617_142400_TAI.Bt.fits
+hmi.sharp_cea_720s.4225.20140617_142400_TAI.Br.fits
+</code></pre>
+<h2 id="_3">预处理</h2>
+<h3 id="_4">整体流程</h3>
+<p>整体流程如下，将Bp，Bt，Br计算变为allboundaries，mask，grid和boundary</p>
+<p><img alt="preprocess.drawio" src="../assets/img/preprocess.drawio.svg" /></p>
+<h3 id="_5">流程细节</h3>
+<p>具体预处理流程如下，三重网格需要Nx，Ny，Nz是4的倍数，这样后面除以两次2才能保证是整数。</p>
+<p><img alt="preprocess_detail.drawio" src="../assets/img/preprocess_detail.drawio.svg" /></p>
+<p>涉及自定义参数的部分如下：</p>
+<ul>
+<li>1.裁剪为4的倍数的算法</li>
+<li>2.计算Nz的算法</li>
+<li>3.产生mask的算法</li>
+<li>4.rebin的算法</li>
+<li>5.boundary的值</li>
+<li>6.grid缓冲区值</li>
+</ul>
+<p>详细阐述如下：</p>
+<p>1.裁剪为4倍数的算法</p>
+<ul>
+<li>若从fits读取的二维数组维度Nx，Ny就是4的倍数则不做处理；</li>
+<li>若不是4的倍数，则做<strong>裁剪</strong>，裁剪方法如下</li>
+<li>以Nx为例子<ul>
+<li>原来Nx是从下标为0开始到Nx，</li>
+<li>现在变为下标从1开始</li>
+<li>若仍然不是4的倍数</li>
+<li>则尾部减去再减去1-2个数</li>
+<li>如：len(Nxraw)=9[0:8],Nxnew=8[1:8]</li>
+<li>len(Nxraw)=14[0:13],Nxnew=8[1:12]</li>
+</ul>
+</li>
+</ul>
+<p>2.计算Nz的算法</p>
+<p>为<span class="arithmatex">\(\frac{3(Nx+Ny)}{8}\)</span>，其中Nx，Ny是经过对齐4后的值，若得到的Nz值不是4的倍数，则加1-3凑成4的倍数。</p>
+<p>3.产生mask的算法</p>
+<p>为<code>B_T/max(B_T)</code>，即<span class="arithmatex">\(\frac{\sqrt{\mathbf N_x^2+\mathbf N_y^2}}{max(\sqrt{\mathbf N_x^2+\mathbf N_y^2})}\)</span></p>
+<p>4.rebin的算法</p>
+<p>为取4个方格点的值求和再除以4平均</p>
+<p>5.boundary的值</p>
+<p>固定如下</p>
+<pre><code>nue
+    0.001
+boundary
+    0
+Mask B_T/max(B_T)
+
+</code></pre>
+<p>6.grid缓冲区值</p>
+<p>固定如下</p>
+<pre><code>mu
+    0.1
+nd
+    0
+</code></pre>
+<h2 id="_6">计算</h2>
+<h3 id="_7">整体流程</h3>
+<p>总体流程如下，使用预处理产生的文件进行三重网格计算，产生Bout.bin</p>
+<p><img alt="computer.drawio" src="../assets/img/computer.drawio.svg" /></p>
+<h3 id="_8">流程细节</h3>
+<p>先进行第一重网格(即最小网格)计算，然后质量控制，然后第二第三重，最终产生Bout.bin文件为非线性无力场3D数据，中间产生B0.bin为势场文件，因为存储问题，最后没有全部保存，做了进一步抽样，详见<strong>产品数据及使用</strong>。</p>
+<p><img alt="computer_detail.drawio" src="../assets/img/computer_detail.drawio.svg" /></p>
+<p>涉及自定义参数的部分如下：</p>
+<ul>
+<li>1.质量通过的标准</li>
+<li>2.计算平台的硬件信息</li>
+</ul>
+<p>详细阐述如下：</p>
+<p>1.质量通过的标准</p>
+<p><code>Angle(B,J)</code>角度小于30度，如：</p>
+<pre><code>
+ Quality Check of NLFFF field
+ Input File: Bout.bin  
+
+ Full Box, nx=424, ny=1112,nz=580, nd=0 
+
+ Average B on lower Boundary: 106.44
+ L=76.3422, L1=48.8366,  L2= 27.5056
+ Sigma_J 0.2908 , Angle(B,J) = 16.9053 Degree
+ -------------------------------------------------------------------
+
+ Inner Region, nx=424, ny=1112,nz=580 
+
+ Average B on lower Boundary: 106.44
+ L=76.3422, L1=48.8366,  L2= 27.5056
+ Sigma_J 0.2908 , Angle(B,J) = 16.9053 Degree
+ -------------------------------------------------------------------
+</code></pre>
+<p>2.计算平台的硬件信息</p>
+<p>因为保存数据为二进制文件，存储涉及float的位数及大小端对齐问题，详细信息如下：</p>
+<p>2022年第一批计算信息</p>
+<table>
+<thead>
+<tr>
+<th>平台</th>
+<th>架构</th>
+<th>float位数</th>
+<th>大小端</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://cloudbrain2.pcl.ac.cn/">鹏城云脑计算</a></td>
+<td>arm64</td>
+<td>8byte</td>
+<td>Little Endian</td>
+</tr>
+<tr>
+<td><a href="https://cloudbrain2.pcl.ac.cn/">鹏城盘古计算</a></td>
+<td>arm64</td>
+<td>8byte</td>
+<td>Little Endian</td>
+</tr>
+<tr>
+<td><a href="https://www.blsc.cn/">科技云计算</a></td>
+<td>x86</td>
+<td>8byte</td>
+<td>Little Endian</td>
+</tr>
+</tbody>
+</table></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../assets/js/mathjax.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
