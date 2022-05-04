@@ -2,7 +2,26 @@
 
 数据处理需要经过预处理和三重网格计算两个步骤。
 
-![preprocess.drawio](img/pc.drawio.svg)
+![preprocess.drawio](assets/img/pc.drawio.svg)
+
+## 原始数据及抽样
+
+原始数据基于[drms](https://docs.sunpy.org/projects/drms/en/stable/)工具包下载[HMI活动区补丁矢量场数据](http://jsoc.stanford.edu/ajax/lookdata.html?ds=hmi.sharp_cea_720s)，抽样规则如下：
+
+| 2022年第一批计算信息 |               |
+| -------------------- | ------------- |
+| 时间范围             | 2010年-2019年 |
+| 活动区序号范围       | 1-7400        |
+| 时间间隔             | 96分钟        |
+| 数据类型             | Bp，Bt，Br    |
+| TODO其他规则         |               |
+
+例子
+```
+hmi.sharp_cea_720s.4225.20140617_142400_TAI.Bp.fits
+hmi.sharp_cea_720s.4225.20140617_142400_TAI.Bt.fits
+hmi.sharp_cea_720s.4225.20140617_142400_TAI.Br.fits
+```
 
 ## 预处理
 
@@ -12,13 +31,13 @@
 
 
 
-![preprocess.drawio](img/preprocess.drawio.svg)
+![preprocess.drawio](assets/img/preprocess.drawio.svg)
 
 ### 流程细节
 
 具体预处理流程如下，三重网格需要Nx，Ny，Nz是4的倍数，这样后面除以两次2才能保证是整数。
 
-![preprocess_detail.drawio](img/preprocess_detail.drawio.svg)
+![preprocess_detail.drawio](assets/img/preprocess_detail.drawio.svg)
 
 涉及自定义参数的部分如下：
 
@@ -87,7 +106,7 @@ nd
 
 总体流程如下，使用预处理产生的文件进行三重网格计算，产生Bout.bin
 
-![computer.drawio](img/computer.drawio.svg)
+![computer.drawio](assets/img/computer.drawio.svg)
 
 
 
@@ -95,7 +114,7 @@ nd
 
 先进行第一重网格(即最小网格)计算，然后质量控制，然后第二第三重，最终产生Bout.bin文件为非线性无力场3D数据，中间产生B0.bin为势场文件，因为存储问题，最后没有全部保存，做了进一步抽样，详见**产品数据及使用**。
 
-![computer_detail.drawio](img/computer_detail.drawio.svg)
+![computer_detail.drawio](assets/img/computer_detail.drawio.svg)
 
 涉及自定义参数的部分如下：
 

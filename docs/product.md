@@ -76,7 +76,7 @@ http://jsoc.stanford.edu/doc/data/hmi/sharp/sharp.htm
 
 ##### 理解角度
 
-![bout_thin.drawio](img/bout_think.drawio.svg)
+![bout_thin.drawio](assets/img/bout_think.drawio.svg)
 
 
 
@@ -84,7 +84,7 @@ http://jsoc.stanford.edu/doc/data/hmi/sharp/sharp.htm
 
 整体是一个`3*nx*ny*nz`的浮点二进制数组，与c语言数组存储方式一致，即nz变化最快。
 
-![bout_store.draw](img/bout_store.draw.svg)
+![bout_store.draw](assets/img/bout_store.draw.svg)
 
 
 
