@@ -1,24 +1,24 @@
 # 在线搜索
-> 若下方无法正常访问，请尝试打开[此页面](/nlfffsearch/)，或在[数据支持](/support/)页面获取更多信息和帮助。
 
-<iframe src="/nlfffsearch/" width="100%" height="800"></iframe> 
+> 若下方无法正常访问，请尝试打开[此页面](https://nlfffdataset.ucas.project.zlogs.net/nlfffsearch/)，或在[数据支持](/support/)页面获取更多信息和帮助。
+
+<iframe src="https://nlfffdataset.ucas.project.zlogs.net/nlfffsearch/" width="100%" height="800"></iframe>
 
 # 数据说明
 
-
-
-| 归类               | 标题               | 描述                                                         | 例子                               | 备注 |
-| ------------------ | ------------------ | ------------------------------------------------------------ | ---------------------------------- | ---- |
-| sharp num and time | sharp num and time | 与原来的`hmi.sharp_cea_720s`数据时间和序号一致，`hmi.sharp_cea_720s.4225.20140617_142400_TAI.Bp.fits` | `2.20100501_000000`                |      |
-| grid3              | nx                 | 第3层nx的尺寸，为了凑整4的倍数略小于等于原始数据的nx         | `284`                              |      |
-| grid3              | ny                 | 第3层ny的尺寸，为了凑整4的倍数略小于等于原始数据的ny         | `388`                              |      |
-| grid3              | nz                 | 第3层nz的尺寸                                                | `256`                              |      |
-| Bout               | max level          | 由于计算资源等原因，有些没能计算到第3层，这里记录改数据最大计算层数；注意如果该值为2，在使用Bout时，应该选择对应的`grid2.ini`，或者`grid3.nx/2`得到真实的`nx`值；同理如果该值为1，则使用`grid1.ini`或`grid3.nx/4` | `1`、`2`、`3`                      |      |
-| Bout               | url                | Bout下载链接                                                 |                                    |      |
-| Bout               | size               | Bout数据大小                                                 | `677019648`                        |      |
-| Bout               | md5                | Bout数据md5校验                                              | `8a95500a820a16c26aba9a462f1461c4` |      |
-| Bout               | quality            | 由于原始数据等原因，Bout数据的质量情况不一定都合格，1合格，0不合格 | `1`、`0`                           |      |
-| more info          | raw data           | 原始数据信息                                                 |                                    |      |
-| more info          | active region      | 对应太阳活动信息                                             |                                    |      |
-
-
+| 归类               | 标题               | 描述                                                                                                                                                                                                                             | 例子                                 | 备注 |
+| ------------------ | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ---- |
+| sharp num and time | sharp num and time | 与原来的 `hmi.sharp_cea_720s`数据时间和序号一致，`hmi.sharp_cea_720s.4225.20140617_142400_TAI.Bp.fits`                                                                                                                       | `2.20100501_000000`                |      |
+| grid3              | nx                 | 第3层nx的尺寸，为了凑整4的倍数略小于等于原始数据的nx                                                                                                                                                                             | `284`                              |      |
+| grid3              | ny                 | 第3层ny的尺寸，为了凑整4的倍数略小于等于原始数据的ny                                                                                                                                                                             | `388`                              |      |
+| grid3              | nz                 | 第3层nz的尺寸                                                                                                                                                                                                                    | `256`                              |      |
+| Bout               | max level          | 由于计算资源等原因，有些没能计算到第3层，这里记录改数据最大计算层数；注意如果该值为2，在使用Bout时，应该选择对应的 `grid2.ini`，或者 `grid3.nx/2`得到真实的 `nx`值；同理如果该值为1，则使用 `grid1.ini`或 `grid3.nx/4` | `1`、`2`、`3`                  |      |
+| Bout               | url                | Bout下载链接                                                                                                                                                                                                                     |                                      |      |
+| Bout               | size               | Bout数据大小                                                                                                                                                                                                                     | `677019648`                        |      |
+| Bout               | md5                | Bout数据md5校验                                                                                                                                                                                                                  | `8a95500a820a16c26aba9a462f1461c4` |      |
+| Bout               | quality            | 由于原始数据等原因，Bout数据的质量情况不一定都合格，1合格，0不合格                                                                                                                                                               | `1`、`0`                         |      |
+| qfactor            | q3d.bin            |                                                                                                                                                                                                                                  |                                      |      |
+| qfactor            | bz0.bin            |                                                                                                                                                                                                                                  |                                      |      |
+| qfactor            | head.txt           |                                                                                                                                                                                                                                  |                                      |      |
+| more info          | raw data           | 原始数据信息                                                                                                                                                                                                                     |                                      |      |
+| more info          | active region      | 对应太阳活动信息                                                                                                                                                                                                                 |                                      |      |

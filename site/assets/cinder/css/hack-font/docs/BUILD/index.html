@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../../../../img/favicon.ico">
+
+    
+    <title>BUILD - 太阳活动区非线性无力场3D数据集</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//fastly.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//fastly.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../../../../..">太阳活动区非线性无力场3D数据集</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../../../..">简介</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../../../search/">搜索</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../../../process/">数据处理</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../../../product/">产品使用</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../../../tool/">工具包</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../../../support/">数据支持</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../../../citation/">成果引用</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#build-dependencies">Build dependencies</a></li>
+            <li class="second-level"><a href="#desktop-font-ttf-build-dependencies">Desktop font (ttf) build dependencies</a></li>
+                
+            <li class="second-level"><a href="#web-font-woff-woff2-build-dependencies">Web font (woff + woff2) build dependencies</a></li>
+                
+            <li class="second-level"><a href="#automated-build-dependency-installation">Automated build dependency installation</a></li>
+                
+        <li class="first-level "><a href="#automated-font-builds">Automated font builds</a></li>
+            <li class="second-level"><a href="#build-all-desktop-and-web-fonts-including-web-font-subsets">Build all desktop and web fonts (including web font subsets)</a></li>
+                
+            <li class="second-level"><a href="#build-ttf-desktop-fonts">Build ttf desktop fonts</a></li>
+                
+            <li class="second-level"><a href="#build-all-web-fonts-includes-woff-woff2-with-character-subsets">Build all web fonts (includes woff, woff2 with character subsets)</a></li>
+                
+            <li class="second-level"><a href="#build-woff-web-fonts-only-complete-sets-only">Build woff web fonts only (complete sets only)</a></li>
+                
+            <li class="second-level"><a href="#build-woff2-web-fonts-only-complete-sets-only">Build woff2 web fonts only (complete sets only)</a></li>
+                
+            <li class="second-level"><a href="#build-woff-and-woff2-subsets-only">Build woff and woff2 subsets only</a></li>
+                
+        <li class="first-level "><a href="#build-paths">Build paths</a></li>
+            <li class="second-level"><a href="#desktop-fonts-ttf">Desktop fonts (ttf)</a></li>
+                
+            <li class="second-level"><a href="#web-fonts-woff-woff2">Web fonts (woff + woff2)</a></li>
+                
+        <li class="first-level "><a href="#uninstall">Uninstall</a></li>
+            <li class="second-level"><a href="#uninstall-details">Uninstall Details</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h2 id="build-dependencies">Build dependencies</h2>
+<p>Hack is compiled from UFO v2 spec source files to ttf, woff, and woff2 fonts with free, open source build tools.  You can either install the tools manually or use the automated build dependency installation approach documented below.</p>
+<h3 id="desktop-font-ttf-build-dependencies">Desktop font (ttf) build dependencies</h3>
+<p>To build the Hack desktop fonts (ttf) from source you will need the following build dependencies:</p>
+<ul>
+<li><a href="https://github.com/googlei18n/fontmake">fontmake</a> Python executable</li>
+<li><a href="https://github.com/fonttools/fonttools">fonttools</a> Python library</li>
+<li><a href="https://www.freetype.org/ttfautohint/">ttfautohint</a> executable (includes Harfbuzz and FreeType dependencies)</li>
+</ul>
+<h3 id="web-font-woff-woff2-build-dependencies">Web font (woff + woff2) build dependencies</h3>
+<p>To build the Hack web fonts from source you will need all of the build dependencies listed above for desktop font builds.  In addition you will need the following dependencies for the web font build steps:</p>
+<ul>
+<li><a href="https://github.com/bramstein/sfnt2woff-zopfli">sfnt2woff-zopfli</a> C++ executable</li>
+<li><a href="https://github.com/source-foundry/woff2">woff2_compress</a> C++ executable</li>
+</ul>
+<h3 id="automated-build-dependency-installation">Automated build dependency installation</h3>
+<p>Install all build dependencies for desktop and web fonts with the following make command:</p>
+<pre><code>$ make build-with-dependencies
+</code></pre>
+<p>This will install all necessary build dependencies and complete a build of all desktop and web fonts.</p>
+<h2 id="automated-font-builds">Automated font builds</h2>
+<p>After the build dependencies are installed, use make targets from the root of the Hack repository to build font sets.</p>
+<h4 id="build-all-desktop-and-web-fonts-including-web-font-subsets">Build all desktop and web fonts (including web font subsets)</h4>
+<pre><code>$ make
+</code></pre>
+<h4 id="build-ttf-desktop-fonts">Build ttf desktop fonts</h4>
+<pre><code>$ make ttf
+</code></pre>
+<h4 id="build-all-web-fonts-includes-woff-woff2-with-character-subsets">Build all web fonts (includes woff, woff2 with character subsets)</h4>
+<pre><code>$ make webfonts
+</code></pre>
+<h4 id="build-woff-web-fonts-only-complete-sets-only">Build woff web fonts only (complete sets only)</h4>
+<pre><code>$ make woff
+</code></pre>
+<h4 id="build-woff2-web-fonts-only-complete-sets-only">Build woff2 web fonts only (complete sets only)</h4>
+<pre><code>$ make woff2
+</code></pre>
+<h4 id="build-woff-and-woff2-subsets-only">Build woff and woff2 subsets only</h4>
+<pre><code>$ make subsets
+</code></pre>
+<h2 id="build-paths">Build paths</h2>
+<h3 id="desktop-fonts-ttf">Desktop fonts (ttf)</h3>
+<p>Desktop fonts are available on the path <code>build/ttf</code> from the root of the repository upon completion of your build.</p>
+<h3 id="web-fonts-woff-woff2">Web fonts (woff + woff2)</h3>
+<p>Web fonts are available on the path <code>build/web/fonts</code> from the root of the repository upon completion of your build.</p>
+<h2 id="uninstall">Uninstall</h2>
+<p>All build dependencies installed with the automated approaches can be uninstalled with the following commands:</p>
+<pre><code>$ pip uninstall fontmake
+$ pip uninstall fonttools
+$ rm -rf ~/ttfautohint-build
+$ rm -rf ~/sfnt2woff-zopfli-build
+$ rm -rf ~/woff2
+</code></pre>
+<p>Here are all of the above commands in a single line that can be copied/pasted into your terminal to accomplish the entire uninstall process:</p>
+<pre><code>$ pip uninstall fontmake &amp;&amp; pip uninstall fonttools &amp;&amp; rm -rf ~/ttfautohint-build &amp;&amp; rm -rf ~/sfnt2woff-zopfli-build &amp;&amp; rm -rf ~/woff2
+</code></pre>
+<p>In cases where a compile did not proceed to completion (e.g. you intentionally exited early or an exception was raised) a temporary directory may still exist in the root of the repository on the path <code>master_ttf</code>.  This can be removed with:</p>
+<pre><code>$ rm -rf master_ttf
+</code></pre>
+<h3 id="uninstall-details">Uninstall Details</h3>
+<p>fontmake and fonttools are Python packages and are uninstalled with pip.</p>
+<p>The FreeType library (including its build dependency Harfbuzz), ttfautohint, sfnt2woff-zopfli, and woff2 are built in directories on your $HOME path.  They are not installed on your $PATH (unless of course you have defined $HOME on $PATH) so they <strong>will not</strong> work from the command line with the name of the executable file only (e.g. <code>$ ttfautohint [file path]</code>).  This is intentional.</p>
+<p>Repeat execution of the build process cleans up the temporary directory <code>master_ttf</code> if found so this step is not mandatory to repeat a build and should not lead to errors with the build.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//fastly.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../../../../.."</script>
+    
+    <script src="../../../../../../js/base.js"></script>
+    <script src="../../../../../js/mathjax.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

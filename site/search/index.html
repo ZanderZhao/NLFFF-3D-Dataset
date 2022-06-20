@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link rel="stylesheet" href="//fastly.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
     <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
@@ -25,14 +25,14 @@
 
     
         
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        <link rel="stylesheet" href="//fastly.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
         
     
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+            <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
         <![endif]-->
 
     
@@ -146,9 +146,9 @@
 
 <h1 id="_1">在线搜索</h1>
 <blockquote>
-<p>若下方无法正常访问，请尝试打开<a href="/nlfffsearch/">此页面</a>，或在<a href="/support/">数据支持</a>页面获取更多信息和帮助。</p>
+<p>若下方无法正常访问，请尝试打开<a href="https://nlfffdataset.ucas.project.zlogs.net/nlfffsearch/">此页面</a>，或在<a href="/support/">数据支持</a>页面获取更多信息和帮助。</p>
 </blockquote>
-<iframe src="/nlfffsearch/" width="100%" height="800"></iframe>
+<iframe src="https://nlfffdataset.ucas.project.zlogs.net/nlfffsearch/" width="100%" height="800"></iframe>
 
 <h1 id="_2">数据说明</h1>
 <table>
@@ -165,7 +165,7 @@
 <tr>
 <td>sharp num and time</td>
 <td>sharp num and time</td>
-<td>与原来的<code>hmi.sharp_cea_720s</code>数据时间和序号一致，<code>hmi.sharp_cea_720s.4225.20140617_142400_TAI.Bp.fits</code></td>
+<td>与原来的 <code>hmi.sharp_cea_720s</code>数据时间和序号一致，<code>hmi.sharp_cea_720s.4225.20140617_142400_TAI.Bp.fits</code></td>
 <td><code>2.20100501_000000</code></td>
 <td></td>
 </tr>
@@ -193,7 +193,7 @@
 <tr>
 <td>Bout</td>
 <td>max level</td>
-<td>由于计算资源等原因，有些没能计算到第3层，这里记录改数据最大计算层数；注意如果该值为2，在使用Bout时，应该选择对应的<code>grid2.ini</code>，或者<code>grid3.nx/2</code>得到真实的<code>nx</code>值；同理如果该值为1，则使用<code>grid1.ini</code>或<code>grid3.nx/4</code></td>
+<td>由于计算资源等原因，有些没能计算到第3层，这里记录改数据最大计算层数；注意如果该值为2，在使用Bout时，应该选择对应的 <code>grid2.ini</code>，或者 <code>grid3.nx/2</code>得到真实的 <code>nx</code>值；同理如果该值为1，则使用 <code>grid1.ini</code>或 <code>grid3.nx/4</code></td>
 <td><code>1</code>、<code>2</code>、<code>3</code></td>
 <td></td>
 </tr>
@@ -223,6 +223,27 @@
 <td>quality</td>
 <td>由于原始数据等原因，Bout数据的质量情况不一定都合格，1合格，0不合格</td>
 <td><code>1</code>、<code>0</code></td>
+<td></td>
+</tr>
+<tr>
+<td>qfactor</td>
+<td>q3d.bin</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>qfactor</td>
+<td>bz0.bin</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>qfactor</td>
+<td>head.txt</td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr>
@@ -263,7 +284,7 @@
     <script src="../js/bootstrap-3.0.3.min.js"></script>
 
     
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+    <script src="//fastly.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
         
     <script>hljs.initHighlightingOnLoad();</script>
     
@@ -273,7 +294,7 @@
     <script src="../js/base.js"></script>
     <script src="../assets/js/mathjax.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="main.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">

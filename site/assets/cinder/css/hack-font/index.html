@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+
+    
+    <title>Hack - 太阳活动区非线性无力场3D数据集</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//fastly.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//fastly.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../../..">太阳活动区非线性无力场3D数据集</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../..">简介</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../search/">搜索</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../process/">数据处理</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../product/">产品使用</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../tool/">工具包</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../support/">数据支持</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../citation/">成果引用</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#hack">Hack</a></li>
+            <li class="second-level"><a href="#a-typeface-designed-for-source-code">A typeface designed for source code</a></li>
+                
+            <li class="second-level"><a href="#contents">Contents</a></li>
+                
+            <li class="second-level"><a href="#specimen">Specimen</a></li>
+                
+            <li class="second-level"><a href="#overview-of-features">Overview of features</a></li>
+                
+            <li class="second-level"><a href="#quick-installation">Quick installation</a></li>
+                
+                <li class="third-level"><a href="#linux">Linux</a></li>
+                <li class="third-level"><a href="#macos">macOS</a></li>
+                <li class="third-level"><a href="#windows">Windows</a></li>
+                <li class="third-level"><a href="#chromechromeos">Chrome/ChromeOS</a></li>
+            <li class="second-level"><a href="#package-managers">Package managers</a></li>
+                
+            <li class="second-level"><a href="#web-font-usage">Web font usage</a></li>
+                
+                <li class="third-level"><a href="#1-add-hack-to-html">1. Add Hack to HTML</a></li>
+                <li class="third-level"><a href="#2-add-hack-to-css">2. Add Hack to CSS</a></li>
+            <li class="second-level"><a href="#additional-tools-for-hack-font-customization">Additional tools for Hack font customization</a></li>
+                
+                <li class="third-level"><a href="#customize-your-build-with-alternate-glyph-styles">Customize your build with alternate glyph styles</a></li>
+                <li class="third-level"><a href="#line-spacing-adjustments">Line spacing adjustments</a></li>
+                <li class="third-level"><a href="#install-modified-and-unmodified-versions-of-hack-on-the-same-system">Install modified and unmodified versions of Hack on the same system</a></li>
+            <li class="second-level"><a href="#resources">Resources</a></li>
+                
+            <li class="second-level"><a href="#contributing">Contributing</a></li>
+                
+            <li class="second-level"><a href="#built-with">Built With</a></li>
+                
+            <li class="second-level"><a href="#acknowledgments">Acknowledgments</a></li>
+                
+            <li class="second-level"><a href="#license">License</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="hack">Hack</h1>
+<p><a href="https://github.com/source-foundry/Hack/releases/latest"><img alt="GitHub release" src="https://img.shields.io/github/release/source-foundry/hack.svg?style=flat" /></a>
+<a href="https://semaphoreci.com/sourcefoundry/hack"><img alt="Build Status" src="https://semaphoreci.com/api/v1/sourcefoundry/hack/branches/master/shields_badge.svg" /></a>
+<a href="https://github.com/source-foundry/Hack/blob/master/docs/CONTRIBUTORS.md"><img alt="Contributors" src="https://img.shields.io/badge/contributors-128-orange.svg?style=flat" /></a>
+<a href="https://gitter.im/source-foundry/Hack"><img alt="Join the chat at https://gitter.im/source-foundry/Hack" src="https://badges.gitter.im/source-foundry/Hack.svg" /></a>
+<a href="https://github.com/source-foundry/Hack/releases/latest"><img alt="Github All Releases" src="https://img.shields.io/github/downloads/source-foundry/hack/total.svg?style=flat" /></a>
+<a href="https://www.jsdelivr.com/package/npm/hack-font"><img alt="" src="https://data.jsdelivr.com/v1/package/npm/hack-font/badge?style=rounded" /></a></p>
+<p>Don't like the development noise from the repository but want to keep up with changes? Check out our <a href="https://gitter.im/source-foundry/Hack">gitter Hack channel</a>.  Have a quick question that doesn't require an issue report?  Drop by our <a href="https://gitter.im/source-foundry/Help">gitter Help channel</a> and ask away.</p>
+<h3 id="a-typeface-designed-for-source-code">A typeface designed for source code</h3>
+<p>Hack is designed to be a workhorse typeface for source code. It has deep roots in the free, open source typeface community and expands upon the contributions of the <a href="https://www.gnome.org/fonts/">Bitstream Vera</a> &amp; <a href="http://dejavu-fonts.org/wiki/Main_Page">DejaVu</a> projects.  The large x-height + wide aperture + low contrast design make it legible at commonly used source code text sizes with a sweet spot that runs in the 8 - 14 range.  The full set of changes to the upstream source are available in the <a href="CHANGELOG/">changelog</a>.</p>
+<p>The project is in active development, and we welcome your input and contributions.  You may view our design objectives and instructions on how to contribute in <a href="CONTRIBUTING/">CONTRIBUTING.md</a>.</p>
+<p>Frequently asked questions are answered in our <a href="FAQ/">FAQ</a>.</p>
+<h3 id="contents">Contents</h3>
+<ul>
+<li><a href="#overview-of-features">Features</a></li>
+<li><a href="#quick-installation">Quick installation</a></li>
+<li><a href="#package-managers">Package manager installation</a></li>
+<li><a href="#web-font-usage">Web font usage</a></li>
+<li><a href="#additional-tools-for-hack-font-customization">Additional tools for font customization</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#built-with">Build tools</a></li>
+<li><a href="#acknowledgments">Acknowledgments</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h3 id="specimen">Specimen</h3>
+<p><a href="http://source-foundry.github.io/Hack/font-specimen.html"><img src="img/hack-specimen-3-crunch.png" alt="Hack &mdash; a typeface designed for source code" width="728"></a></p>
+<h2 id="overview-of-features">Overview of features</h2>
+<ul>
+<li><strong>Typeface Name</strong>: Hack</li>
+<li><strong>Category</strong>: Monospaced</li>
+<li><strong>Character set support</strong>: ASCII, Latin-1, Latin Extended A, Greek, Cyrillic</li>
+<li><strong>Powerline Support</strong>: Yes, included by default</li>
+<li><strong>Included Styles</strong>: Regular, Bold, Italic, Bold Italic</li>
+</ul>
+<h2 id="quick-installation">Quick installation</h2>
+<p><strong>NOTE ON FONT UPDATES</strong>
+<em>If you are updating your version of Hack, be sure to remove the previously installed version and clear your font cache first to avoid conflicts that can lead to platform-specific rendering errors.  Many platforms/distros offer package managers that automate this process. We release a Windows installer to automate the install/update process on the Windows platform. See below for additional details.</em></p>
+<h3 id="linux">Linux</h3>
+<ol>
+<li>Download the <a href="https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip">latest version of Hack</a>.</li>
+<li>Extract the files from the archive (<code>.zip</code>).</li>
+<li>Copy the font files to either your system font folder (often <code>/usr/share/fonts/</code>) or user font folder (often <code>~/.local/share/fonts/</code> or <code>/usr/local/share/fonts</code>).</li>
+<li>Copy the font configuration file in <code>config/fontconfig/</code> to either the system font configuration folder (often <code>/etc/fonts/conf.d/</code>) or the font user folder (often <code>~/.config/fontconfig/conf.d</code>)</li>
+<li>Clear and regenerate your font cache and indexes with the following command:</li>
+</ol>
+<pre><code>$ fc-cache -f -v
+</code></pre>
+<p>You can confirm that the fonts are installed with the following command:</p>
+<pre><code>$ fc-list | grep &quot;Hack&quot;
+</code></pre>
+<p>Some Linux users may find that font rendering is improved on their distro with <a href="https://wiki.manjaro.org/index.php?title=Improve_Font_Rendering">these instructions</a>.</p>
+<h3 id="macos">macOS</h3>
+<ol>
+<li>Download the <a href="https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip">latest version of Hack</a>.</li>
+<li>Extract the files from the archive (<code>.zip</code>) and click to open them.</li>
+<li>Follow the instructions from your operating system.</li>
+<li>Enjoy!</li>
+</ol>
+<h3 id="windows">Windows</h3>
+<p><a href="https://github.com/source-foundry/Hack-windows-installer/releases/latest"><img alt="Hack Windows Installer" src="https://img.shields.io/badge/Windows-Installer-blue.svg?style=flat-square" /></a></p>
+<p>The <a href="https://github.com/source-foundry/Hack-windows-installer/releases/latest">Hack Windows Installer</a> simplifies installation on the Windows platform.  The tool guides you through the installation process and addresses some common rendering issues that occur with font installs/updates on the Windows platform.  This tool is the recommended installation approach for Windows users.</p>
+<h3 id="chromechromeos">Chrome/ChromeOS</h3>
+<p>To use with <a href="https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo">Secure Shell</a>,
+edit the following fields in Options:</p>
+<ul>
+<li>font-family: <code>"Hack"</code></li>
+<li>user-css: <code>https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css</code></li>
+</ul>
+<h2 id="package-managers">Package managers</h2>
+<p>We highly recommend the convenience of a community developed package manager or other auto-updating utility if this is available on your platform. While the package manager releases may be a bit delayed relative to the repository releases, the packages distributed through these package managers were designed to tune and automate font installs and updates on your system.</p>
+<p>We are aware of Hack support in the following package managers (with associated package names):</p>
+<ul>
+<li><strong>Arch Linux</strong>: <code>ttf-hack</code></li>
+<li><strong>Chocolatey (Windows)</strong>: <code>hackfont</code></li>
+<li><strong>Debian</strong>: <code>fonts-hack-ttf</code></li>
+<li><strong>Fedora / CentOS</strong>: <code>dnf-plugins-core :: heliocastro/hack-fonts :: hack-fonts</code></li>
+<li><strong>Gentoo Linux</strong>: <code>media-fonts/hack</code></li>
+<li><strong>Homebrew Cask (OS X)</strong>: <code>caskroom/fonts/font-hack</code></li>
+<li><strong>Open BSD</strong>: <code>fonts/hack-fonts</code></li>
+<li><strong>OpenSUSE</strong>: <code>hack-fonts</code></li>
+<li><strong>Ubuntu</strong>: <code>fonts-hack-ttf</code></li>
+<li><strong>Visual Studio Package Manager</strong>: <code>hack.font</code></li>
+</ul>
+<p>For installation issues with Hack packages, please contact the package maintainer directly.</p>
+<h2 id="web-font-usage">Web font usage</h2>
+<p>Hack is available in the woff and woff2 web font formats. <strong>Bold</strong> and <em>italic</em> styles are included by default and work out-of-the-box via the <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> tags.</p>
+<p>Hack is available through the jsDelivr and cdnjs CDN services:</p>
+<p><a href="https://www.jsdelivr.com/package/npm/hack-font"><img alt="jsDelivr" src="https://img.shields.io/badge/jsDelivr-Hack_web_font_CDN-blue.svg?style=flat-square" /></a>
+<a href="https://cdnjs.com/libraries/hack-font"><img alt="cdnjs" src="https://img.shields.io/badge/cdnjs-Hack_web_font_CDN-blue.svg?style=flat-square" /></a></p>
+<p>The following snippets provide examples of Hack web font use through the jsDelivr CDN.  Adjust the URL paths to those provided by cdnjs (click the link above to find the appropriate URL) to switch to the cdnjs CDN.</p>
+<h4 id="1-add-hack-to-html">1. Add Hack to HTML</h4>
+<p>Include one of the following in the &lt;head&gt; section of your HTML file:</p>
+<p><strong>Subset web fonts</strong></p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css&quot;&gt;
+</code></pre>
+<p><strong>Full character set web fonts</strong></p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css&quot;&gt;
+</code></pre>
+<h4 id="2-add-hack-to-css">2. Add Hack to CSS</h4>
+<pre><code class="language-css">pre, code { font-family: Hack, monospace; }
+</code></pre>
+<p>See the <a href="docs/WEBFONT_USAGE/">WEBFONT_USAGE.md</a> documentation for additional details, including instructions on how to download, host, and serve the web fonts on your web server.</p>
+<h2 id="additional-tools-for-hack-font-customization">Additional tools for Hack font customization</h2>
+<h3 id="customize-your-build-with-alternate-glyph-styles">Customize your build with alternate glyph styles</h3>
+<p>The <a href="https://github.com/source-foundry/alt-hack">alt-hack</a> library includes a (growing) collection of alternate glyph styles that can be used to customize your Hack fonts.  Don't like the default zero style?  Swap out the UFO design source with a slashed zero or dotted zero and build new fonts that work better for you.</p>
+<p>We welcome contributions of new alternate glyph styles in the alt-hack repository.  Design something new that works well with rest of the typeface and submit a pull request to the alt-hack repository so that others can use it in their custom builds.</p>
+<p>Detailed build instructions are available on the <a href="https://github.com/source-foundry/alt-hack">alt-hack repository README.md</a>.  Font renaming instructions to support side-by-side installs with upstream Hack are available below.</p>
+<h3 id="line-spacing-adjustments">Line spacing adjustments</h3>
+<p><a href="https://github.com/source-foundry/font-line">font-line</a> is a tool that modifies the default line spacing used in the Hack design (20% UPM).</p>
+<p>The following gist installs font-line and modifies line spacing for all desktop font files contained in the same directory:</p>
+<ul>
+<li><a href="https://gist.github.com/chrissimpkins/f39e85f5f157d839e46168de1b61a174">linespace.sh</a> (<a href="https://gist.github.com/chrissimpkins/f39e85f5f157d839e46168de1b61a174/archive/f3f93dea87d64ddc4684a61cbc96ddf79d30824a.zip">download .zip</a>)</li>
+</ul>
+<h3 id="install-modified-and-unmodified-versions-of-hack-on-the-same-system">Install modified and unmodified versions of Hack on the same system</h3>
+<p>If you modify the upstream Hack source or the released font binaries and would like to install your modified fonts on the same system with the Hack fonts as released here, you can use the <a href="https://github.com/chrissimpkins/fontname.py">fontname.py Python script</a> to define a new font name in the binary files.  For example, you can install <code>Hack</code> on your platform along with a 15% UPM line spacing adjusted version as <code>Hack Fifteen</code>.  Modify default glyphs with those in our <a href="https://github.com/source-foundry/alt-hack">alt-hack repository</a> or design your own and define your creation with any name that you'd like.  Following installation, your renamed fonts should show under the name that you define with the script so that you can switch between any of them as you need.</p>
+<p>Usage details and examples are provided on the fontname.py repository README.</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="http://source-foundry.github.io/Hack/font-specimen.html">Full specimen</a></li>
+<li><a href="CHANGELOG/">Changelog</a></li>
+<li><a href="http://sourcefoundry.org/hack/">Project website</a></li>
+<li><a href="docs/CONTRIBUTORS/">Contributors</a></li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>We welcome contributions to Hack!  Please review our <a href="CONTRIBUTING/">CONTRIBUTING.md</a> document for details.</p>
+<h2 id="built-with">Built With</h2>
+<p>Hack is built with the following free, open source projects:</p>
+<ul>
+<li><a href="https://github.com/googlefonts/fontbakery">Font Bakery</a> - post-compilation modifications</li>
+<li><a href="https://github.com/googlei18n/fontmake">fontmake</a> - UFO to ttf compilation</li>
+<li><a href="https://github.com/fonttools/fonttools">fontTools</a> - OpenType table read/write</li>
+<li><a href="https://github.com/source-foundry/font-v">font-v</a> - font version string editor</li>
+<li><a href="https://github.com/chrissimpkins/ink">ink</a> - stream editor for text file templating</li>
+<li><a href="https://github.com/openfv/openfv">OpenFV</a> - open specification for semantic typeface versioning</li>
+<li><a href="https://github.com/bramstein/sfnt2woff-zopfli">sfnt2woff_zopfli</a> - ttf to woff web font compilation</li>
+<li><a href="https://www.freetype.org/ttfautohint/">ttfautohint</a> - ttf instruction sets</li>
+<li><a href="https://github.com/source-foundry/uni">uni</a> - Unicode code point search</li>
+<li><a href="https://github.com/source-foundry/ufodiff">ufodiff</a> - UFO source diffs</li>
+<li><a href="https://github.com/unified-font-object/ufoLib">ufoLib</a> - UFO source file reads/writes/testing</li>
+<li><a href="https://github.com/source-foundry/ufolint">ufolint</a> - UFO source file linting for CI testing</li>
+<li><a href="https://github.com/google/woff2">woff2</a> - ttf to woff2 web font compilation</li>
+</ul>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>We would like to acknowledge and thank the <a href="https://www.jsdelivr.com/">jsDelivr</a> and <a href="https://cdnjs.com">cdnjs</a> teams for their support of the Hack project through their free web font CDN services.  We greatly appreciate the tremendous support of open source software development by the <a href="https://semaphoreci.com/">Semaphore CI</a> team.  Their free CI testing service and rapid, excellent technical support have been tremendous assets for our project. Lastly, a huge thanks go out to all of those who do the unrecognized work to get Hack out there to users so that it is easy to access, install, upgrade, and use.  There are redistribution package managers, review committee members, testers, and others across platforms/distros/applications who perform this thankless work and often go unrecognized.  Your efforts are much appreciated.</p>
+<h2 id="license">License</h2>
+<p><strong>Hack</strong> work is &copy; 2018 Source Foundry Authors. MIT License</p>
+<p><strong>Bitstream Vera Sans Mono</strong> &copy; 2003 Bitstream, Inc. (with Reserved Font Names <em>Bitstream</em> and <em>Vera</em>). Bitstream Vera License.</p>
+<p>The font binaries are released under a license that permits unlimited print, desktop, web, and software embedding use for commercial and non-commercial applications.</p>
+<p>See <a href="https://github.com/source-foundry/Hack/blob/master/LICENSE.md">LICENSE.md</a> for the full texts of the licenses.</p>
+<!-- Link to the latest release archive for README.md file --></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//fastly.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../../.."</script>
+    
+    <script src="../../../../js/base.js"></script>
+    <script src="../../../js/mathjax.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

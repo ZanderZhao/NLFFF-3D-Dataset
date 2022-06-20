@@ -15,6 +15,11 @@
  
 黄鑫(技术支持) `xhuang(at)bao.ac.cn`
 
+第一批计算  
+朱小帅`xszhu(at)bao.ac.cn`  
+赵忠瑞`zhaozhongrui21(at)mails.ucas.ac.cn`  
+张鑫泽`zhangxinze17(at)mails.ucas.ac.cn`
+
 ## 数据支持
 
 ### 原始数据支持

@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+
+    
+    <title>Version 3.003 - 太阳活动区非线性无力场3D数据集</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//fastly.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//fastly.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../../../..">太阳活动区非线性无力场3D数据集</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../../..">简介</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../../search/">搜索</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../../process/">数据处理</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../../product/">产品使用</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../../tool/">工具包</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../../support/">数据支持</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../../../citation/">成果引用</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#version-3003">Version 3.003</a></li>
+        <li class="first-level "><a href="#version-3002">Version 3.002</a></li>
+        <li class="first-level "><a href="#version-3001">Version 3.001</a></li>
+        <li class="first-level "><a href="#version-3000">Version 3.000</a></li>
+            <li class="second-level"><a href="#new-license">New license</a></li>
+                
+            <li class="second-level"><a href="#new-source-and-build-tooling">New source and build tooling</a></li>
+                
+            <li class="second-level"><a href="#continuous-integration-testing">Continuous integration testing</a></li>
+                
+            <li class="second-level"><a href="#desktop-font-build-changes">Desktop font build changes</a></li>
+                
+            <li class="second-level"><a href="#web-font-build-changes">Web font build changes</a></li>
+                
+            <li class="second-level"><a href="#design-changes">Design changes</a></li>
+                
+            <li class="second-level"><a href="#documentation-changes">Documentation changes</a></li>
+                
+            <li class="second-level"><a href="#fixes">Fixes</a></li>
+                
+        <li class="first-level "><a href="#version-2020">Version 2.020</a></li>
+        <li class="first-level "><a href="#version-2019-release-build">Version 2.019 (release build)</a></li>
+        <li class="first-level "><a href="#version-2018-release-build">Version 2.018 (release build)</a></li>
+        <li class="first-level "><a href="#version-2017-release-build">Version 2.017 (release build)</a></li>
+        <li class="first-level "><a href="#version-2016-testing-build">Version 2.016 (testing build)</a></li>
+        <li class="first-level "><a href="#version-2015-release-build">Version 2.015 (release build)</a></li>
+        <li class="first-level "><a href="#version-2014-testing-build">Version 2.014 (testing build)</a></li>
+        <li class="first-level "><a href="#version-2013-release-build">Version 2.013 (release build)</a></li>
+        <li class="first-level "><a href="#version-2012-testing-build">Version 2.012 (testing build)</a></li>
+        <li class="first-level "><a href="#version-2011-testing-build">Version 2.011 (testing build)</a></li>
+        <li class="first-level "><a href="#version-2010">Version 2.010</a></li>
+            <li class="second-level"><a href="#new-glyphs">New Glyphs</a></li>
+                
+            <li class="second-level"><a href="#modified-glyphs">Modified Glyphs</a></li>
+                
+                <li class="third-level"><a href="#latin-character-set">Latin Character Set</a></li>
+                <li class="third-level"><a href="#greek-character-set">Greek Character Set</a></li>
+                <li class="third-level"><a href="#cyrillic-character-set">Cyrillic Character Set</a></li>
+                <li class="third-level"><a href="#armenian-character-set">Armenian Character Set</a></li>
+                <li class="third-level"><a href="#georgian-character-set">Georgian Character Set</a></li>
+                <li class="third-level"><a href="#punctuation-character-set">Punctuation Character Set</a></li>
+                <li class="third-level"><a href="#symbol-character-set">Symbol Character Set</a></li>
+            <li class="second-level"><a href="#metrics-changes">Metrics Changes</a></li>
+                
+            <li class="second-level"><a href="#true-type-instructions-postscript-hinting">True Type Instructions / PostScript Hinting</a></li>
+                
+            <li class="second-level"><a href="#removed">Removed</a></li>
+                
+        <li class="first-level "><a href="#version-13">Version 1.3</a></li>
+            <li class="second-level"><a href="#modified-glyphs_1">Modified Glyphs</a></li>
+                
+            <li class="second-level"><a href="#build-files">Build Files</a></li>
+                
+        <li class="first-level "><a href="#version-12">Version 1.2</a></li>
+            <li class="second-level"><a href="#modified-glyphs_2">Modified Glyphs</a></li>
+                
+            <li class="second-level"><a href="#source">Source</a></li>
+                
+        <li class="first-level "><a href="#version-101">Version 1.0.1</a></li>
+        <li class="first-level "><a href="#version-100">Version 1.0.0</a></li>
+            <li class="second-level"><a href="#changes">Changes</a></li>
+                
+                <li class="third-level"><a href="#new-glyphs_1">New Glyphs</a></li>
+                <li class="third-level"><a href="#modified-glyphs_3">Modified Glyphs</a></li>
+                <li class="third-level"><a href="#font-styles">Font Styles</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="version-3003">Version 3.003</h1>
+<ul>
+<li>U+005B, increased length of square brackets' horizontal strokes (symmetrically reducing left and right sidebearing), all variants</li>
+<li>U+005D, increased length of square brackets' horizontal strokes (symmetrically reducing left and right sidebearing), all variants</li>
+<li>U+0051, extended length of tail, all variants</li>
+<li>U+051A, extended length of tail, all variants</li>
+<li>U+0061, simplified and improved contours, all variants</li>
+<li>U+0062, simplified and improved contours, all variants</li>
+<li>U+0063, simplified and improved contours, all variants</li>
+<li>U+0064, simplified and improved contours, all variants</li>
+<li>U+0065, simplified and improved contours, all variants</li>
+<li>U+0066, simplified and improved contours, all variants</li>
+<li>U+0067, simplified and improved contours, all variants</li>
+<li>U+0068, simplified and improved contours, all variants</li>
+<li>U+0069, simplified and improved contours, all variants</li>
+<li>U+006A, simplified and improved contours, all variants</li>
+<li>U+006B, simplified and improved contours, all variants</li>
+<li>U+006C, simplified and improved contours, all variants</li>
+<li>U+006D, simplified and improved contours, all variants</li>
+<li>U+006E, simplified and improved contours, all variants</li>
+<li>U+006F, simplified and improved contours, all variants</li>
+<li>U+0070, simplified and improved contours, all variants</li>
+<li>U+0071, simplified and improved contours, all variants</li>
+<li>U+0072, simplified and improved contours, all variants</li>
+<li>U+0073, simplified and improved contours, all variants</li>
+<li>U+0074, simplified and improved contours, all variants</li>
+<li>U+0075, simplified and improved contours, all variants</li>
+<li>U+0076, simplified and improved contours, all variants</li>
+<li>U+0077, simplified and improved contours, all variants</li>
+<li>U+0078, simplified and improved contours, all variants</li>
+<li>U+0079, simplified and improved contours, all variants</li>
+<li>U+007A, simplified and improved contours, all variants</li>
+<li>added config/fontconfig/45-Hack.conf for use on Linux distros to define Hack as a monospaced typeface</li>
+<li>added ttdiff.sh shell script for OpenType table diffs of ttx XML dumps of font binaries</li>
+<li>added checksum.py to scripts directory, supports the generation of SHA1 checksum files of font binaries and ttx dumps of OpenType tables</li>
+<li>ttfautohint-build.sh, fixed backtick and expr syntax shellcheck warnings (SC2003/2006)</li>
+<li>converted to Semaphore CI (from Travis CI) as CI testing service, eliminated .travis.yml settings file</li>
+</ul>
+<h1 id="version-3002">Version 3.002</h1>
+<ul>
+<li>bugfix for https://github.com/source-foundry/Hack/issues/377 (affects Windows users)</li>
+<li>bugfix for https://github.com/source-foundry/Hack/issues/379 (affects Linux users)</li>
+<li>bugfix included removal of blue zone reference font in ttfautohint instruction set processing (-R flag).  This led to variable lowercase glyph heights on Linux and Windows platforms</li>
+</ul>
+<h1 id="version-3001">Version 3.001</h1>
+<ul>
+<li>U+017F, added long s glyph to all four variant sets, completes Latin Extended A character sets</li>
+<li>U+2024, added onedotenleader glyph to all four variant sets (general punctuation set)</li>
+<li>U+2025, added twodotenleader glyph to all four variant sets (general punctuation set)</li>
+<li>U+2027, added hyphenationpoint glyph to all four variant sets (general punctuation set)</li>
+<li>U+2032, added minute glyph to all four variant sets (general punctuation set)</li>
+<li>U+2033, added second glyph to all four variant sets (general punctuation set)</li>
+<li>U+2034, modified glyph name to "millisecond" in all four variant sets (general punctuation set)</li>
+<li>U+2012, modified figure dash to width of numeral glyphs in all four variant sets</li>
+<li>U+2013, modified en dash to half width of em in all four variant sets</li>
+<li>U+2014, modified em dash, slight adjustment to height in all four variant sets, horizontal position in italic and bold italic sets</li>
+<li>U+0031, increased angle of top stroke vs. horizontal, all sets (legibility vs. U+006C)</li>
+<li>U+0031, increased length of the top stroke, all sets (legibility vs. U+006C)</li>
+<li>U+0031, decreased width of the top stroke, bold and bold italic sets (legibility vs. U+006C)</li>
+<li>removed name table, ID=5 record ttfautohint metadata (previously included in this version string)</li>
+<li>updated Harbuzz build dependency to v1.7.4</li>
+<li>updated FreeType build dependency to v2.8.1</li>
+<li>removed FreeType build patches in ttfautohint-build.sh script (not necessary after above upgrade)</li>
+<li>modified ttfautohint-build.sh license to MIT License</li>
+<li>added ink CSS file templates for automated git sha1 short code writes for releases</li>
+<li>added new CSS file template build shell script</li>
+<li>added new make target for CSS template file builds (make css)</li>
+</ul>
+<h1 id="version-3000">Version 3.000</h1>
+<h3 id="new-license">New license</h3>
+<ul>
+<li>Eliminated Hack Open Font License</li>
+<li>Added MIT License for Hack work</li>
+<li>These license changes eliminated the Reserved Font Name "Hack" in the typeface license</li>
+<li>No changes to co-licensure with the Bitstream Vera license from upstream source</li>
+</ul>
+<h3 id="new-source-and-build-tooling">New source and build tooling</h3>
+<ul>
+<li>converted to valid UFO v2 source files with cubic curves</li>
+<li>added automated build from scratch approach with make + FLOSS software only for desktop fonts</li>
+<li>added automated build from scratch approach with make + FLOSS software only for web fonts (complete sets and subsets)</li>
+<li>added automated cross platform build dependency installation as a make target</li>
+<li>added ttfautohint build from source scripting support (includes support for builds on OS X platform)</li>
+<li>added automated ttf build autohinting scripting with ttfautohint as part of the make build workflow</li>
+<li>added Font Bakery fstype post-compilation fix</li>
+<li>added Font Bakery DSIG table post-compilation fix</li>
+<li>modified default zopfli iterations to 3 from 15 for woff builds (improved build time vs file size balance)</li>
+<li>created a (workaround) approach to web font subset builds from UFO source files with fontmake</li>
+<li>created new font archive preparation script</li>
+<li>repository path modifications to support above changes</li>
+<li>eliminated old, unnecessary repository scripts</li>
+<li>added fontmake build dependency</li>
+<li>added fontTools build dependency</li>
+<li>added ttfautohint build dependency (includes Harfbuzz and FreeType build dependencies)</li>
+<li>added Font Bakery fstype post-compilation fix dependency (script housed in repo)</li>
+<li>added Font Bakery DSIG table fix dependency (script housed in repo)</li>
+<li>added sfnt2woff-zopfli build dependency</li>
+<li>added woff2 build dependency (uses customized Source Foundry fork that is modified to address build bug on OS X platforms)</li>
+<li>added Source Foundry SRC vendor ID to source files</li>
+</ul>
+<h3 id="continuous-integration-testing">Continuous integration testing</h3>
+<ul>
+<li>added Travis CI desktop font build testing on Linux and OS X platforms</li>
+<li>added Travis CI web font build testing on Linux and OS X platforms</li>
+<li>added ufolint UFO source file linting to CI testing</li>
+<li>added shellcheck shell script source file linting to CI testing</li>
+</ul>
+<h3 id="desktop-font-build-changes">Desktop font build changes</h3>
+<ul>
+<li>eliminated otf builds</li>
+</ul>
+<h3 id="web-font-build-changes">Web font build changes</h3>
+<ul>
+<li>eliminated eot web font builds</li>
+<li>eliminated ttf web font builds</li>
+<li>modified CSS file paths (affects web font CDN URL for all v3.0+ builds)</li>
+</ul>
+<h3 id="design-changes">Design changes</h3>
+<ul>
+<li>added U+0114 and U+0115, all sets</li>
+<li>added U+012C and U+012D, all sets</li>
+<li>added U+014E and U+014F, all sets</li>
+<li>Bold set: reduced dimensions of middle dot glyph (U+00B7)</li>
+<li>improved design of the Powerline glyph set (addresses alignment rendering on Linux and Windows platforms)</li>
+<li>added web font subset character set targets of ASCII, Latin-1, Latin Extended A, General Punctuation, and Currency sets</li>
+<li>ttfautohint updated to v1.6</li>
+<li>added Regular set as blue zone reference font for ttfautohint ttf build autohinting</li>
+<li>defined x height pixel grid rounding up size range as 6ppem - 10ppem for ttfautohint ttf build autohinting</li>
+<li>examined and improved manual hinting adjustments across the entire ASCII glyph set x sizes 8 - 14 ppem</li>
+<li>Regular set: modified manual hints U+0023 @ size 13</li>
+<li>Regular set: modified manual hints U+0025 @ sizes 10, 11, 14</li>
+<li>Regular set: modified manual hints U+002B @ sizes 12, 13</li>
+<li>Regular set: modified manual hints U+0030 @ 8, 12, 13, 14</li>
+<li>Bold set: modified manual hints U+0021 @ size 14</li>
+<li>Bold set: modified manual hints U+0025 @ sizes 10, 11, 14</li>
+<li>Bold set: modified manual hints U+002B @ sizes 10, 11</li>
+<li>Bold set: modified manual hints U+0038 @ sizes 12, 13, 14</li>
+<li>Italic set: modified manual hints U+0025 @ sizes 10, 11, 14</li>
+<li>BoldItalic set: modified manual hints U+002B @ sizes 10, 11</li>
+</ul>
+<h3 id="documentation-changes">Documentation changes</h3>
+<ul>
+<li>added design guidelines to CONTRIBUTING.md documentation</li>
+<li>added issue reporting guidelines to CONTRIBUTING.md documentation</li>
+<li>added pull request guidelines to CONTRIBUTING.md documentation</li>
+<li>added contributors definition to CONTRIBUTING.md documentation</li>
+<li>added build documentation in docs/BUILD.md</li>
+<li>added Frequently Asked Questions documentation as FAQ.md</li>
+</ul>
+<h3 id="fixes">Fixes</h3>
+<ul>
+<li>modified openTypeNamePreferredSubfamilyName key definition in fontinfo.plist to support proper naming on Windows platform</li>
+<li>added middle dot glyph (U+00B7) to BoldItalic set</li>
+<li>fixed superscript OpenType features scripts in features.fea x all four variant sets</li>
+</ul>
+<h1 id="version-2020">Version 2.020</h1>
+<ul>
+<li>divided the vertical stroke in the pipe glyph (U+007C), italic and bold italic sets</li>
+<li>modified U+007C hints in TrueType builds at 6, 7, 10, 11, 12, 13, 14 ppem italic set</li>
+<li>modified U+007C hints in TrueType builds at 6, 7, 10, 14 ppem bold italic set</li>
+<li>modified slant angle and stroke length (U+005C), italic and bold italic sets</li>
+<li>centered U+007C and U+005C, all sets</li>
+<li>modified zero (U+0030) oval fill hints in regular set</li>
+<li>added Powerline glyphs to the bold, italic, and bold italic sets</li>
+<li>U+2502 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2503 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+250C lower terminal to -530, all sets</li>
+<li>U+250D lower terminal to -530, all sets</li>
+<li>U+250E lower terminal to -530, all sets</li>
+<li>U+250F lower terminal to -530, all sets</li>
+<li>U+2510 lower terminal to -530, all sets</li>
+<li>U+2511 lower terminal to -530, all sets</li>
+<li>U+2512 lower terminal to -530, all sets</li>
+<li>U+2513 lower terminal to -530, all sets</li>
+<li>U+2514 upper terminal to 1950, all sets</li>
+<li>U+2515 upper terminal to 1950, all sets</li>
+<li>U+2516 upper terminal to 1950, all sets</li>
+<li>U+2517 upper terminal to 1950, all sets</li>
+<li>U+2518 upper terminal to 1950, all sets</li>
+<li>U+2519 upper terminal to 1950, all sets</li>
+<li>U+251A upper terminal to 1950, all sets</li>
+<li>U+251B upper terminal to 1950, all sets</li>
+<li>U+251C upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+251D upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+251E upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+251F upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2520 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2521 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2522 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2523 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2524 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2525 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2526 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2527 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2528 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2529 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+252A upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+252B upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+252C lower terminal to -530, all sets</li>
+<li>U+252D lower terminal to -530, all sets</li>
+<li>U+252E lower terminal to -530, all sets</li>
+<li>U+252F lower terminal to -530, all sets</li>
+<li>U+2530 lower terminal to -530, all sets</li>
+<li>U+2531 lower terminal to -530, all sets</li>
+<li>U+2532 lower terminal to -530, all sets</li>
+<li>U+2533 lower terminal to -530, all sets</li>
+<li>U+2534 upper terminal to 1950, all sets</li>
+<li>U+2535 upper terminal to 1950, all sets</li>
+<li>U+2536 upper terminal to 1950, all sets</li>
+<li>U+2537 upper terminal to 1950, all sets</li>
+<li>U+2538 upper terminal to 1950, all sets</li>
+<li>U+2539 upper terminal to 1950, all sets</li>
+<li>U+253A upper terminal to 1950, all sets</li>
+<li>U+253B upper terminal to 1950, all sets</li>
+<li>U+252C upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+252D upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+253E upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+253F upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2540 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2541 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2542 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2543 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2544 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2545 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2546 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2547 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2548 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2549 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+254A upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+254B upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2551 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2552 lower terminal to -530, all sets</li>
+<li>U+2553 lower terminals to -530, all sets</li>
+<li>U+2554 lower terminals to -530, all sets</li>
+<li>U+2555 lower terminal to -530, all sets</li>
+<li>U+2556 lower terminals to -530, all sets</li>
+<li>U+2557 lower terminals to -530, all sets</li>
+<li>U+2558 upper terminal to 1950, all sets</li>
+<li>U+2558 upper terminals to 1950, all sets</li>
+<li>U+2559 upper terminals to 1950, all sets</li>
+<li>U+255A upper terminals to 1950, all sets</li>
+<li>U+255B upper terminal to 1950, all sets</li>
+<li>U+255C upper terminals to 1950, all sets</li>
+<li>U+255D upper terminals to 1950, all sets</li>
+<li>U+255E upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+255F upper terminals to 1950, lower terminals to -530, all sets</li>
+<li>U+2560 upper terminals to 1950, lower terminals to -530, all sets</li>
+<li>U+2561 upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+2562 upper terminals to 1950, lower terminals to -530, all sets</li>
+<li>U+2563 upper terminals to 1950, lower terminals to -530, all sets</li>
+<li>U+2564 lower terminal to -530, all sets</li>
+<li>U+2565 lower terminals to -530, all sets</li>
+<li>U+2566 lower terminals to -530, all sets</li>
+<li>U+2567 upper terminal to 1950, all sets</li>
+<li>U+2568 upper terminals to 1950, all sets</li>
+<li>U+2569 upper terminals to 1950, all sets</li>
+<li>U+256A upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+256B upper terminals to 1950, lower terminals to -530, all sets</li>
+<li>U+256C upper terminals to 1950, lower terminals to -530, all sets</li>
+<li>U+256D lower terminal to -530, all sets</li>
+<li>U+256E lower terminal to -530, all sets</li>
+<li>U+256F upper terminal to 1950, all sets</li>
+<li>U+2570 upper terminal to 1950, all sets</li>
+<li>U+2571 adjusted horizontal position and length of strokes</li>
+<li>U+2572 adjusted horizontal position and length of strokes</li>
+<li>U+2573 adjusted horizontal position and length of strokes</li>
+<li>U+2575 upper terminal to 1950, all sets</li>
+<li>U+2577 lower terminal to -530, all sets</li>
+<li>U+2578 horizontal alignment of superior margin of the stroke (1 unit adjustment)</li>
+<li>U+2579 upper terminal to 1950, all sets</li>
+<li>U+257B lower terminal to -530, all sets</li>
+<li>U+257D upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>U+257F upper terminal to 1950, lower terminal to -530, all sets</li>
+<li>updated OpenType name table field 1 0 0</li>
+<li>updated OpenType name table field 3 1 1033</li>
+<li>new <a href="https://github.com/source-foundry/Hack-windows-installer">Windows installer</a></li>
+<li>added line spacing adjustment shell scripts</li>
+<li>added font-tables.py OpenType table reporting script</li>
+<li>updated dev-versioner.py OpenType table versioning script to support UTF16 big endian encoding of nameID=5, platformID=3 name table</li>
+</ul>
+<h1 id="version-2019-release-build">Version 2.019 (release build)</h1>
+<p>ttf, otf, webfont builds</p>
+<ul>
+<li>removed SVG from webfont releases</li>
+<li>Corrected U+2588 glyph shape in regular set (had inappropriately small width and height)</li>
+<li>decreased width U+2580 all sets</li>
+<li>decreased width U+2581 all sets</li>
+<li>decreased width U+2582 all sets</li>
+<li>decreased width U+2583 all sets</li>
+<li>decreased width U+2584 all sets</li>
+<li>decreased width U+2585 all sets</li>
+<li>decreased width U+2586 all sets</li>
+<li>decreased width U+2857 all sets</li>
+<li>adjusted left sidebearing U+2589 all sets</li>
+<li>adjusted left sidebearing U+258A all sets</li>
+<li>adjusted left sidebearing U+258B all sets</li>
+<li>adjusted left sidebearing U+258C all sets</li>
+<li>adjusted left sidebearing U+258D all sets</li>
+<li>adjusted left sidebearing U+258E all sets</li>
+<li>adjusted left sidebearing U+258F all sets</li>
+<li>adjusted right sidebearing U+2590 all sets</li>
+<li>decreased width of U+2594 all sets</li>
+<li>adjusted right sidebearing U+2595 all sets</li>
+<li>adjusted left sidebearing U+2596 all sets</li>
+<li>adjusted right sidebearing U+2597 all sets</li>
+<li>adjusted left sidebearing U+2598 all sets</li>
+<li>decreased width of U+2599 all sets</li>
+<li>decreased width of U+259A all sets</li>
+<li>decreased width of U+259B all sets</li>
+<li>decreased width of U+259C all sets</li>
+<li>adjusted right sidebearing U+259D all sets</li>
+<li>decreased width of U+259E all sets</li>
+<li>decreased width of U+259F all sets</li>
+<li>increased upper terminal position to 1950 units U+2580 all sets</li>
+<li>increased upper terminal position to 1950 units U+2588 all sets</li>
+<li>increased upper terminal position to 1950 units U+2589 all sets</li>
+<li>increased upper terminal position to 1950 units U+258A all sets</li>
+<li>increased upper terminal position to 1950 units U+258B all sets</li>
+<li>increased upper terminal position to 1950 units U+258C all sets</li>
+<li>increased upper terminal position to 1950 units U+258D all sets</li>
+<li>increased upper terminal position to 1950 units U+258E all sets</li>
+<li>increased upper terminal position to 1950 units U+258F all sets</li>
+<li>increased upper terminal position to 1950 units U+2590 all sets</li>
+<li>increased upper terminal position to 1950 units U+2594 all sets</li>
+<li>increased upper terminal position to 1950 units U+2595 all sets</li>
+<li>increased upper terminal position to 1950 units U+2598 all sets</li>
+<li>increased upper terminal position to 1950 units U+2599 all sets</li>
+<li>increased upper terminal position to 1950 units U+259A all sets</li>
+<li>increased upper terminal position to 1950 units U+259B all sets</li>
+<li>increased upper terminal position to 1950 units U+259C all sets</li>
+<li>increased upper terminal position to 1950 units U+259D all sets</li>
+<li>increased upper terminal position to 1950 units U+259E all sets</li>
+<li>increased upper terminal position to 1950 units U+259F all sets</li>
+<li>reverted Cyrillic lower case es glyph (U+0441) to Latin lower case c shape</li>
+<li>reverted Cyrillic upper case es glyph (U+0421) to Latin upper case C shape</li>
+</ul>
+<h1 id="version-2018-release-build">Version 2.018 (release build)</h1>
+<p>ttf, otf, webfont builds</p>
+<p>Patch for missing glyphs in regular set:</p>
+<ul>
+<li>added U+016C (upper case U breve), regular set - Issue #21</li>
+<li>added U+016D (lower case u breve), regular set - Issue #21</li>
+</ul>
+<h1 id="version-2017-release-build">Version 2.017 (release build)</h1>
+<p>ttf, otf, webfont builds</p>
+<p>Changes vs. release v2.015:</p>
+<ul>
+<li>increased vertical position of the tilde (U+007E) to improve alignment with other glyphs - Issue #23</li>
+<li>increased width of the vertical stroke on the dollar symbol (U+0024) - Issue #92</li>
+<li>modified Cyrillic upper case C (U+0421) to differentiate from Latin C - Issues #22 &amp; #29</li>
+<li>modified Cyrillic lower case c (U+0441) to differentiate from Latin c - Issues #22 &amp; #29</li>
+<li>modified upper case theta (U+0398) to differentiate from lower case theta - Issue #36</li>
+<li>added U+0132 (IJ) glyph - Issue #52</li>
+<li>added U+0133 (ij) glyph - Issue #52</li>
+<li>added U+013F (upper case L dot) glyph - Issue #52</li>
+<li>added U+0140 (lower case l dot) glyph - Issue #52</li>
+<li>added U+0162 (upper case T cedilla) glyph - Issue #52</li>
+<li>added U+0163 (lower case t cedilla) glyph - Issue #52</li>
+<li>added U+0138 (kgreenlandic) glyph - Issue #52</li>
+<li>added U+266A (musical note) glyph - Issue #52</li>
+<li>added U+0149 (lower case n apostrophe) - Issue #52</li>
+<li>added U+1EF9 (lower case y tilde) glyph - Issue #102</li>
+<li>added U+1EF8 (upper case Y tilde) glyph - Issue #102</li>
+<li>added U+1EBD (lower case e tilde) glyph - Issue #102</li>
+<li>added U+1EBC (upper case E tilde) glyph - Issue #102</li>
+<li>added U+2116 (numero) glyph - Issues #22 &amp; #114</li>
+<li>added U+01A4 (p hook) glyph - Issue #105</li>
+<li>added U+0108 (upper case C circumflex) - Issue #21</li>
+<li>added U+0109 (lower case c circumflex) - Issue #21</li>
+<li>added U+011C (upper case G circumflex) - Issue #21</li>
+<li>added U+011D (lower case g circumflex) - Issue #21</li>
+<li>added U+0124 (upper case H circumflex) - Issue #21</li>
+<li>added U+0125 (lower case h circumflex) - Issue #21</li>
+<li>added U+0134 (upper case J circumflex) - Issue #21</li>
+<li>added U+0135 (lower case j circumflex) - Issue #21</li>
+<li>added U+015C (upper case S circumflex) - Issue #21</li>
+<li>added U+015D (lower case s circumflex) - Issue #21</li>
+<li>added U+016C (upper case U breve) - Issue #21</li>
+<li>added U+016D (lower case u breve) - Issue #21</li>
+<li>added U+20B7 (spesmilo) - Issue #21</li>
+<li>fixed missing null glyph (U+0000) in regular, italic, bolditalic sets</li>
+<li>removed duplicate CR glyph (U+000D) in all sets - Issue #149</li>
+<li>updated ttfautohint to version 1.4.1 for TrueType (.ttf) build instruction sets</li>
+</ul>
+<h1 id="version-2016-testing-build">Version 2.016 (testing build)</h1>
+<ul>
+<li>increased vertical position of the tilde (U+007E) to improve alignment with other glyphs - Issue #23</li>
+<li>increased width of the vertical stroke on the dollar symbol (U+0024) - Issue #92</li>
+<li>modified Cyrillic upper case C (U+0421) to differentiate from Latin C - Issues #22 &amp; #29</li>
+<li>modified Cyrillic lower case c (U+0441) to differentiate from Latin c - Issues #22 &amp; #29</li>
+<li>modified upper case theta (U+0398) to differentiate from lower case theta - Issue #36</li>
+<li>added U+1EF9 (lower case y tilde) glyph - Issue #102</li>
+<li>added U+1EF8 (upper case Y tilde) glyph - Issue #102</li>
+<li>added U+1EBD (lower case e tilde) glyph - Issue #102</li>
+<li>added U+1EBC (upper case E tilde) glyph - Issue #102</li>
+<li>added U+2116 (numero) glyph - Issues #22 &amp; #114</li>
+<li>added U+01A4 (p hook) glyph - Issue #105</li>
+<li>added U+0108 (upper case C circumflex) - Issue #21</li>
+<li>added U+0109 (lower case c circumflex) - Issue #21</li>
+<li>added U+011C (upper case G circumflex) - Issue #21</li>
+<li>added U+011D (lower case g circumflex) - Issue #21</li>
+<li>added U+0124 (upper case H circumflex) - Issue #21</li>
+<li>added U+0125 (lower case h circumflex) - Issue #21</li>
+<li>added U+0134 (upper case J circumflex) - Issue #21</li>
+<li>added U+0135 (lower case j circumflex) - Issue #21</li>
+<li>added U+015C (upper case S circumflex) - Issue #21</li>
+<li>added U+015D (lower case s circumflex) - Issue #21</li>
+<li>added U+016C (upper case U breve) - Issue #21</li>
+<li>added U+016D (lower case u breve) - Issue #21</li>
+<li>added U+20B7 (spesmilo) - Issue #21</li>
+<li>updated ttfautohint to version 1.4 for TrueType (.ttf) build instruction sets</li>
+</ul>
+<h1 id="version-2015-release-build">Version 2.015 (release build)</h1>
+<p>ttf, otf, webfont builds</p>
+<p>Changes vs. release v2.013:</p>
+<ul>
+<li>new vertical metrics = decreased line spacing height - Issues #28, #32, #39, #41, #95, #103</li>
+<li>adjusted vertical position of the colon to a higher position, improves alignment with other punctuation glyphs (U+003A) - Issue #66</li>
+<li>changed vertical position of the dash (U+002D) so that regular and oblique, bold and bold oblique are properly aligned - Issue #107</li>
+<li>updated hinting algorithm for bold set (improved point position over stem of lowercase j/i for some text sizes) - Issue #84</li>
+<li>underscore (U+005F) centered, increased width, increased height &amp; aligned vertical position closer to baseline - Issues #97, #98, #100, 103,</li>
+<li>increased vertical position of dieresis mark on lowercase u dieresis (U+00FC) - Issue #61</li>
+<li>increased vertical position of dieresis mark on lowercase i dieresis (U+00EF)</li>
+<li>increased vertical position of dieresis mark on lowercase e dieresis (U+00EB)</li>
+<li>decreased vertical position of the asterisk (U+002A) - Issue #34</li>
+<li>new design for ascii tilde - broader curves, taller glyph with goal to improve appearance at small text sizes where it tended to render like a dash (U+007E) - Issue #37</li>
+<li>new ttf build autohinting script (./postbuild_processing/tt-hinting/autohint.sh)</li>
+<li>new ttf build autohinting Control Instructions File - bold set (./postbuild_processing/tt-hinting/Hack-Bold-TA.txt)</li>
+<li>new ttf build release script (./postbuild_processing/tt-hinting/release.sh)</li>
+<li>new web font release script (./postbuild_processing/webfonts/releasewebfonts.sh)</li>
+<li>new vfb to UFO source file conversion script (./tools/makeufo.sh)</li>
+<li>new UFO source file types - includes separate source files for TrueType (<code>*-TT.ufo</code>) and PostScript (<code>*-PS.ufo</code>) releases</li>
+<li>source file path changes: now includes separate <code>ufo</code> and <code>vfb</code> directories under the <code>./source</code> repository directory</li>
+<li>Hack Open Font license updated to version 2.0.  The license changes better define the Hack project as a derivative project of the Bitstream Vera Sans Mono typeface project and are intended to make the license more consistent with the Bitstream Vera libre, open source license under which Hack is co-licensed.  There are no new restrictions on use of the fonts with these license changes.  Embedding permissions are made explicit in this version of the Hack Open Font license.</li>
+</ul>
+<h1 id="version-2014-testing-build">Version 2.014 (testing build)</h1>
+<ul>
+<li>ttf only build for testing</li>
+<li>updated hinting algorithm for bold set (corrected incorrect point position of lowercase j/i at some sizes) - Issue #84</li>
+<li>adjusted vertical metrics - Issues #28, #32, #39, #41, #95, #103</li>
+<li>centered, increased width, &amp; adjusted vertical position of underscore - Issues #97, #98, #100, 103,</li>
+<li>increased vertical position of dieresis mark on lowercase u dieresis (U+00FC) - Issue #61</li>
+<li>increased vertical position of dieresis mark on lowercase i dieresis (U+00EF)</li>
+<li>increased vertical position of dieresis mark on lowercase e dieresis (U+00EB)</li>
+<li>decreased vertical position of the asterisk (U+002A) - Issue #34</li>
+<li>new design for ascii tilde (U+007E) - Issue #37</li>
+</ul>
+<h1 id="version-2013-release-build">Version 2.013 (release build)</h1>
+<p>ttf, otf, webfont builds</p>
+<p>Changes vs. release v2.010</p>
+<ul>
+<li>Fixed missing middle dot glyph (U+00B7), adjusted width of U+00B7 em box to address spacing issues in editors that highlight empty spaces (Issues #27 &amp; 46)</li>
+<li>Powerline glyph alignment and size adjustments (Issue #33)</li>
+<li>Fixed name tables to address:<ul>
+<li>incorrect oblique rendering with Java type renderers on OS X (Issue #26)</li>
+<li>incorrect italic + bold + bold oblique rendering in some syntax highlighters (Issues #42, #50, #60)</li>
+<li>backslash character took inappropriate vertical alignment because of incorrect slant angle in some editors (Issue #67)</li>
+</ul>
+</li>
+<li>Changed oblique and bold oblique font names to "Hack Italic" and "Hack Bold Italic" to address Windows listings</li>
+<li>Changed oblique and bold oblique webfont names to "hack-italic-webfont.[xxx]" and "hack-bolditalic-webfont.[xxx]"</li>
+<li>Changed oblique and bold oblique basic Latin + Latin-1 webfont subsets to the names "hack-italic-latin-webfont.[xxx]" and "hack-bolditalic-latin-webfont.[xxx]"</li>
+<li>Changed license name from "Modified SIL Open Font License" to "Hack Open Font License" to comply with SIL regulations for SIL Open Font License modifications</li>
+<li>Removed all license references to SIL to comply with SIL regulations for modifications of the SIL Open Font License</li>
+<li>Removed SIL Open Font License preamble from the Hack Open Font License to comply with SIL regulations for modifications of the SIL Open Font License</li>
+<li>Removed the following statement from Hack Open Font License condition #3: "This restriction only applies to the primary font name as presented to the users." to address a reserved font name conflict with the Bitstream Vera license</li>
+<li>Modified the build directory structure for the Hack web fonts</li>
+<li>Added Hack webfont CSS files to the build directory</li>
+</ul>
+<h1 id="version-2012-testing-build">Version 2.012 (testing build)</h1>
+<ul>
+<li>ttf only build for testing</li>
+<li>Powerline glyph alignment and size adjustments (Issue #33)</li>
+<li>Fixed name tables to address:<ul>
+<li>incorrect oblique rendering with Java type renderers on OS X (Issue #26)</li>
+<li>incorrect italic + bold + bold oblique rendering in some syntax highlighters (Issues #42, #50, #60)</li>
+<li>backslash character took inappropriate vertical alignment because of incorrect slant angle in some editors (Issue #67)</li>
+</ul>
+</li>
+</ul>
+<h1 id="version-2011-testing-build">Version 2.011 (testing build)</h1>
+<ul>
+<li>ttf only build for testing</li>
+<li>fixed missing middle dot glyph (U+00B7), adjusted width of U+00B7 em box to address spacing issues in editors that highlight empty spaces (Issues 27 &amp; 46)</li>
+</ul>
+<h1 id="version-2010">Version 2.010</h1>
+<h3 id="new-glyphs">New Glyphs</h3>
+<ul>
+<li>New glyphs for Revised Western European (ISO-8859-15, Latin-9) character set (shapes from DejaVu Sans Mono typeface)</li>
+<li>New glyphs for Central European (ISO-8859-2, Latin-2) character set (shapes from DejaVu Sans Mono typeface)</li>
+<li>New glyphs for South European (ISO-8859-3, Latin-3) character set (shapes from DejaVu Sans Mono typeface)</li>
+<li>New glyphs for Vietnamese character set (shapes from DejaVu Sans Mono typeface)</li>
+<li>New glyphs for Pan African Latin character set (shapes from DejaVu Sans Mono typeface)</li>
+<li>New glyphs for Cyrillic (ISO-8859-5) character set (shapes from DejaVu Sans Mono typeface)</li>
+<li>New glyphs for Greek (ISO-8859-7) character set (shapes from DejaVu Sans Mono typeface)</li>
+<li>New glyphs for Armenian character set (shapes from DejaVu Sans Mono typeface)</li>
+<li>New glyphs for Georgian character set (shapes from DejaVu Sans Mono typeface)</li>
+<li>New punctuation glyphs</li>
+<li>New Powerline glyphs</li>
+<li>New number glyphs</li>
+<li>New scientific inferior numerals</li>
+<li>New superscript numerals</li>
+<li>New subscript numerals</li>
+<li>New symbol glyphs</li>
+<li>New <strong>dotlessi</strong></li>
+<li>New <strong>iacute</strong></li>
+<li>New <strong>icircumflex</strong></li>
+<li>New <strong>idieresis</strong></li>
+<li>New <strong>igrave</strong></li>
+<li>New <strong>imacron</strong></li>
+<li>New <strong>iogonek</strong></li>
+<li>New <strong>itilde</strong></li>
+<li>New <strong>uppercase upsilon</strong></li>
+<li>New <strong>uppercase upsilon tonos</strong></li>
+<li>New uni0069</li>
+<li>New uni0457</li>
+<li>New uni0458</li>
+</ul>
+<h3 id="modified-glyphs">Modified Glyphs</h3>
+<h5 id="latin-character-set">Latin Character Set</h5>
+<ul>
+<li>Modified <strong>uppercase Q</strong> - added flared tail and modified tail angle</li>
+<li>Modified <strong>uppercase F</strong> - central arm lowered to fill open gap at the base</li>
+<li>Modified <strong>lowercase a</strong> - added curved tail/spur</li>
+<li>Modified <strong>lowercase b</strong> - decreased width of terminal, opened angle</li>
+<li>Modified <strong>lowercase d</strong> - decreased width of terminal, opened angle</li>
+<li>Modified <strong>lowercase g</strong> - decreased width of terminal, opened angle</li>
+<li>Modified <strong>lowercase i</strong> - rounded corners of the dot, oriented dot position left of center relative to vertical stem, adjusted vertical position of the horizontal stem to x-height, lengthened the vertical stem to slightly overshoot baseline with the curved tail, decreased width of horizontal stem</li>
+<li>Modified <strong>lowercase j</strong> - rounded corners of the dot, oriented dot position left of center relative to vertical stem</li>
+<li>Modified <strong>lowercase l</strong> - lengthened the vertical stem to overshoot the baseline with the curved tail</li>
+<li>Modified <strong>lowercase m</strong> - decreased width of terminal, opened angle</li>
+<li>Modified <strong>lowercase n</strong> - decreased width of terminal, opened angle</li>
+<li>Modified <strong>lowercase p</strong> - decreased width of terminal, opened angle</li>
+<li>Modified <strong>lowercase q</strong> - decreased width of terminal, opened angle</li>
+<li>Modified <strong>lowercase r</strong> - decreased width of terminal, opened angle</li>
+<li>Modified <strong>lowercase t</strong> - added angle to the upper terminal, increased length of the vertical stem to allow the curved tail to slightly overshoot the baseline</li>
+<li>Modified <strong>lowercase y</strong> - modified curves</li>
+<li>Modified <strong>0</strong> - modified width and length of central oval fill, improved symmetry of the oval fill in all sets</li>
+<li>Modified <strong>2</strong> - rounded the upper left corner of the base, decreased width of the spine of the hook</li>
+<li>Modified <strong>Abreve</strong> - modified curves</li>
+<li>Modified <strong>Aogonek</strong> - modified curve, decreased the width of the tail to meet typeface metrics</li>
+<li>Modified <strong>Eogonek</strong> - modified tail curve</li>
+<li>Modified <strong>Iogonek</strong> - modified tail curve</li>
+<li>Modified <strong>Itilde</strong> - modified tilde curve</li>
+<li>Modified <strong>Ohorn</strong> - modified horn curve</li>
+<li>Modified <strong>Oslash</strong> - modified curves</li>
+<li>Modified <strong>Oslashacute</strong> - modified curves</li>
+<li>Modified <strong>Otilde</strong> - modified tilde curve</li>
+<li>Modified <strong>Racute</strong> - modified bowl and leg curves</li>
+<li>Modified <strong>Rcaron</strong> - modiifed bowl and leg curves</li>
+<li>Modified <strong>Rcommaaccent</strong> - modified bowl and leg curves</li>
+<li>Modified <strong>Scommaaccent</strong> - modified curves</li>
+<li>Modified <strong>Tcommaaccent</strong> - modified comma accent curves</li>
+<li>Modified <strong>Ucircumflex</strong> - modified curves</li>
+<li>Modified <strong>Udieresis</strong> - modified curves</li>
+<li>Modified <strong>Ugrave</strong> - modified curves</li>
+<li>Modified <strong>Uhorn</strong> - modified curves</li>
+<li>Modified <strong>Uhungarumlaut</strong> - modified curves</li>
+<li>Modified <strong>Umacron</strong> - modified curves</li>
+<li>Modified <strong>Uogonek</strong> - modified curves</li>
+<li>Modified <strong>Uring</strong> - modified curves</li>
+<li>Modified <strong>Utilde</strong> - modified curves</li>
+<li>Modified <strong>agrave</strong> - decreased width of terminal, opened angle in regular and bold sets</li>
+<li>Modified <strong>aacute</strong> - decreased width of terminal, opened angle in regular and bold sets</li>
+<li>Modified <strong>abreve</strong> - decreased width of upper terminal to create an angled stem</li>
+<li>Modified <strong>acircumflex</strong> - decreased width of terminal, opened angle</li>
+<li>Modified <strong>atilde</strong> - decreased width of terminal, opened angle</li>
+<li>Modified <strong>adieresis</strong> - decreased width of terminal, opened angle</li>
+<li>Modified <strong>amacron</strong> - decreased width of upper terminal to create an angled stem</li>
+<li>Modified <strong>aring</strong> - decreased width of terminal, opened angle</li>
+<li>Modified <strong>dcroat</strong> - decreased width of terminal, opened angle</li>
+<li>Modified <strong>dcaron</strong> - decreased width of lower terminal to create angled stem</li>
+<li>Modified <strong>ecaron</strong> - modified curves</li>
+<li>Modified <strong>ecircumflex</strong> - modified curves</li>
+<li>Modified <strong>edieresis</strong> - modified curves</li>
+<li>Modified <strong>egrave</strong> - modified curves</li>
+<li>Modified <strong>emacron</strong> - modified curves</li>
+<li>Modified <strong>eogonek</strong> - modified curves</li>
+<li>Modified <strong>gbreve</strong> - modified curves of bowl and tail</li>
+<li>Modified <strong>gcaron</strong> - modified curves of bowl and tail, decreased width of upper terminal to create angled stem</li>
+<li>Modified <strong>gcommaaccent</strong> - modified curves of bowl and tail, decreased width of upper terminal to create angled stem</li>
+<li>Modified <strong>gdotaccent</strong> - modified curves of bowl and tail, decreased width of upper terminal to create angled stem</li>
+<li>Modified <strong>hbar</strong> - adjusted curves</li>
+<li>Modified <strong>dotlessi</strong> - decreased width of horizontal stem</li>
+<li>Modified <strong>iacute</strong> - decreased width of horizontal stem</li>
+<li>Modified <strong>icircumflex</strong> - decreased width of horizontal stem</li>
+<li>Modified <strong>idieresis</strong> - decreased width of horizontal stem</li>
+<li>Modified <strong>igrave</strong> - decreased width of horizontal stem</li>
+<li>Modified <strong>imacron</strong> - decreased width of horizontal stem</li>
+<li>Modified <strong>iogonek</strong> - decreased width of horizontal stem</li>
+<li>Modified <strong>itilde</strong> -decreased width of horizontal stem</li>
+<li>Modified <strong>nacute</strong> - adjusted curves</li>
+<li>Modified <strong>ncaron</strong> - adjusted curves</li>
+<li>Modified <strong>ncommaaccent</strong> - adjusted curves</li>
+<li>Modified <strong>eng</strong> - adjusted curves, decreased the upper terminal width to create an angled stem</li>
+<li>Modified <strong>nacute</strong> - decreased width of upper terminal to create angled stem</li>
+<li>Modified <strong>ncaron</strong> - decreased width of upper terminal to create angled stem</li>
+<li>Modified <strong>ncommaaccent</strong> - decreased width of upper terminal to create angled stem</li>
+<li>Modified <strong>ntilde</strong> - adjusted curves</li>
+<li>Modified <strong>ohorn</strong> - adjusted curves</li>
+<li>Modified <strong>ohungarumlaut</strong> - adjusted curves</li>
+<li>Modified <strong>omacron</strong> - adjusted curves</li>
+<li>Modified <strong>oslash</strong> - adjusted curves</li>
+<li>Modified <strong>oslashacute</strong> - adjusted curves</li>
+<li>Modified <strong>otilde</strong> - adjusted curves</li>
+<li>Modified <strong>racute</strong> - adjusted curves, decreased width of upper terminal to create angled stem</li>
+<li>Modified <strong>rcaron</strong> - adjusted curves, decreased width of upper terminal to create angled stem</li>
+<li>Modified <strong>rcommaaccent</strong> - adjusted curves, decreased width of upper terminal to create angled stem</li>
+<li>Modified <strong>sacute</strong> - adjusted curves</li>
+<li>Modified <strong>scedila</strong> - adjusted curves</li>
+<li>Modified <strong>scommaaccent</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase t</strong> - decreased length of the left terminal to angle the horizontal stem</li>
+<li>Modified <strong>tbar</strong> - decreased length of the left terminal to angle the horizontal stem</li>
+<li>Modified <strong>tcaron</strong> - decreased length of the left terminal to angle the horizontal stem</li>
+<li>Modified <strong>tcommaaccent</strong> - adjusted curves, decreased length of the left terminal to angle the horizontal stem</li>
+<li>Modified <strong>uhorn</strong> - adjusted curves, decreased width of lower terminal to create angled stem</li>
+<li>Modified <strong>uhungarumlaut</strong> - adjusted curves, decreased width of lower terminal to create angled stem</li>
+<li>Modified <strong>umacron</strong> - adjusted curves, decreased width of lower terminal to create angled stem</li>
+<li>Modified <strong>uogonek</strong> - adjusted curves, decreased width of lower terminal to create angled stem</li>
+<li>Modified <strong>uring</strong> - adjusted curves, decreased width of lower terminal to create angled stem</li>
+<li>Modified <strong>utilde</strong> - adjusted curves, decreased width of lower terminal to create angled stem</li>
+<li>Modified <strong>yacute</strong> - adjusted curves</li>
+<li>Modified <strong>ycircumflex</strong> - adjusted curves</li>
+<li>Modified <strong>ydieresis</strong> - adjusted curves</li>
+<li>Modified <strong>ygrave</strong> - adjusted curves</li>
+<li>Modified <strong>zdotaccent</strong> - rounded corners of dot</li>
+<li>Modified <strong>gbreve</strong> - decreased width of terminal, opened angle in regular and bold sets</li>
+<li>Modified <strong>ntilde</strong> - decreased width of terminal, opened angle in regular and bold sets</li>
+<li>Modified <strong>ugrave</strong> - decreased width of terminal, opened angle in regular and bold sets</li>
+<li>Modified <strong>uacute</strong> - decreased width of terminal, opened angle in regular and bold sets</li>
+<li>Modified <strong>ucircumflex</strong> - decreased width of terminal, opened angle in regular and bold sets</li>
+<li>Modified <strong>udieresis</strong> - decreased width of terminal, opened angle in regular and bold sets</li>
+<li>Modified <strong>exclamdown</strong> - rounded corners of the dot</li>
+<li>Modified <strong>dieresis</strong> - rounded corners</li>
+<li>Modified <strong>questionmarkdown</strong> - rounded corners of the dot</li>
+<li>Modified <strong>ordfeminine</strong> - decreased width of lower terminal on the a character to create angled stem</li>
+<li>Modified <strong>Adieresis</strong> - rounded corners of dieresis component of glyph</li>
+<li>Modified <strong>Edieresis</strong> - rounded corners of dieresis component of glyph</li>
+<li>Modified <strong>Idieresis</strong> - rounded corners of dieresis component of glyph</li>
+<li>Modified <strong>Odieresis</strong> - rounded corners of dieresis component of glyph</li>
+<li>Modified <strong>Udieresis</strong> - rounded corners of dieresis component of glyph</li>
+<li>Modified <strong>Ydieresis</strong> - rounded corners of dieresis component of glyph</li>
+<li>Modified <strong>adieresis</strong> - rounded corners of dieresis component of glyph</li>
+<li>Modified <strong>edieresis</strong> - rounded corners of dieresis component of glyph</li>
+<li>Modified <strong>idieresis</strong> - rounded corners of dieresis component of glyph</li>
+<li>Modified <strong>odieresis</strong> - rounded corners of dieresis component of glyph</li>
+<li>Modified <strong>udieresis</strong> - rounded corners of dieresis component of glyph</li>
+<li>Modified <strong>ydieresis</strong> - rounded corners of dieresis component of glyph</li>
+<li>Modified <strong>Idotaccent</strong> - rounded corners of the dot</li>
+<li>Modified <strong>dotaccent</strong> - rounded corners of the dot</li>
+<li>Modified <strong>ellipsis</strong> - rounded corners of the dots</li>
+<li>Modified <strong>periodcentered</strong> - rounded corners of the dot</li>
+</ul>
+<h5 id="greek-character-set">Greek Character Set</h5>
+<ul>
+<li>Modified <strong>upsilondieresistonos</strong> - adjusted vertical position to properly position on the baseline</li>
+<li>Modified <strong>iotadieresistonos</strong> - adjusted vertical position to properly position on the baseline</li>
+<li>Modified <strong>eth</strong> - altered curve of the neck</li>
+<li>Modified <strong>uppercase eta</strong> - modified the curves</li>
+<li>Modified <strong>uppercase theta</strong> - modified the curves</li>
+<li>Modified <strong>uppercase omicron</strong> - modified the curves</li>
+<li>Modified <strong>uppercase rho</strong> - modified the curves</li>
+<li>Modified <strong>uppercase psi</strong> - modified the curves</li>
+<li>Modified <strong>uppercase upsilon</strong> - new glyph style (change from Latin Y shape)</li>
+<li>Modified <strong>uppercase omega</strong> - modified the curves</li>
+<li>Modified <strong>uppercase alphatonos</strong> - adjusted right and left sidebearings, corrected position of the tonos symbol</li>
+<li>Modified <strong>uppercase epsilontonos</strong> - adjusted right and left sidebearings, corrected position of the tonos symbol</li>
+<li>Modified <strong>uppercase etatonos</strong> - adjusted right and left sidebearings, corrected position of the tonos symbol</li>
+<li>Modified <strong>uppercase iotatonos</strong> - adjusted right and left sidebearings, corrected position of the tonos symbol</li>
+<li>Modified <strong>uppercase omicrontonos</strong> - adjusted right and left sidebearings, corrected position of the tonos symbol</li>
+<li>Modified <strong>uppercase upsilontonos</strong> - adjusted right and left sidebearings, corrected position of the tonos symbol</li>
+<li>Modified <strong>uppercase omegatonos</strong> - adjusted right and left sidebearings, corrected position of the tonos symbol</li>
+<li>Modified <strong>uppercase iotadieresis</strong> - rounded the dieresis points</li>
+<li>Modified <strong>uppercase upsilondieresis</strong> - new upsilon shape, rounded the dieresis points</li>
+<li>Modified <strong>lowercase alpha</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase beta</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase gamma</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase delta</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase epsilon</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase zeta</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase eta</strong> - decreased width of the top terminal to create angled stem, adjusted curves</li>
+<li>Modified <strong>lowercase theta</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase iota</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase lambda</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase mu</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase nu</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase xi</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase omicron</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase pi</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase rho</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase sigmafinal</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase sigma</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase tau</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase upsilon</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase phi</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase chi</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase psi</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase omega</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase iotatonos</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase iotadieresis</strong> - rounded points of the dieresis, adjusted curves</li>
+<li>Modified <strong>iotadieresistonos</strong> - rounded corners of points of dieresis mark, appropriately positioned tonos mark, adjusted curves</li>
+<li>Modified <strong>lowercase upsilontonos</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase upsilondieresis</strong> - rounded points of dieresis mark, adjusted curves</li>
+<li>Modified <strong>upsilondieresistonos</strong> - rounded corners of points of dieresis mark, appropriately positioned tonos mark, adjusted curves</li>
+<li>Modified <strong>lowercase omicrontonos</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase omegatonos</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase alphatonos</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase epsilontonos</strong> - adjusted curves</li>
+<li>Modified <strong>lowercase etatonos</strong> - decreased width of top terminal to create angled stem, adjusted curves</li>
+</ul>
+<h5 id="cyrillic-character-set">Cyrillic Character Set</h5>
+<ul>
+<li>Modified curves in uni0411, uni0412, uni0401, uni0417, uni041B, uni041E, uni0420, uni0421, uni0423, uni040E, uni0424, uni0427, uni042F, uni042C, uni042A, uni042B, uni0409, uni040A, uni0405, uni0404, uni042D, uni0408, uni040B, uni042E, uni0402, uni0462, uni0472, uni0494, uni0498, uni04AA, uni04BA, uni04CB, uni04D0, uni04D2, uni04D6, uni04D8, uni04DA, uni04DC, uni04DE, uni04E0, uni04E4, uni04E6, uni04E8, uni04EA, uni04EC, uni04EE, uni04F0, uni04F2, uni04F4, uni04F8, uni0510, uni051A, uni0430, uni0431, uni0432, uni0434, uni0435, uni0450, uni0451, uni0437, uni0439, uni043B, uni043E, uni0440, uni0441, uni0443, uni045E, uni0444, uni0447, uni044F, uni044C, uni044A, uni044B, uni0459, uni045A, uni0455, uni0454, uni044D, uni0456, uni0457, uni0458, uni045B, uni044E, uni0452, uni0463, uni0473, uni0499, uni04AB, uni04BB, uni04CC, uni04D1, uni04D3, uni04D7, uni04D9, uni04DB, uni04DD, uni04DF, uni04E1, uni04E5, uni04E7, uni04E9, uni04EB, uni04ED, uni04EF, uni04F1, uni04F3, uni04F5, uni04F9, uni0511, uni051B, uni04D5</li>
+<li>Rounded corners of points of dieresis marks in uni0401, uni0407, uni04D2, uni04DA, uni04DC, uni04DE, uni04E4, uni04E6, uni04EA, uni04EC, uni04F0, uni04F4, uni04F8, uni0451, uni0457, uni04D3, uni04DB, uni04DD, uni04DF, uni04E5, uni04E7, uni04EB, uni04ED, uni04F1, uni04F5, uni04F9</li>
+<li>Rounded corners of dots in uni0456, uni0458</li>
+<li>Modified <strong>lowercase i</strong> glyphs (uni0456, uni0457) so that they are consistent with the shape of the Hack Latin lowercase i</li>
+<li>Modified <strong>uni0430</strong> - decreased width of lower terminal to create angle</li>
+<li>Modified <strong>uni0440</strong> - decreased width of upper terminal to create angle</li>
+<li>Modified <strong>uni04D1</strong> - decreased width of lower terminal to create angle</li>
+<li>Modified <strong>uni04D3</strong> - decreased width of lower terminal to create angle</li>
+<li>Modified <strong>uni051B</strong> - decreased width of upper terminal to create angle</li>
+<li>Numerous metrics changes to better align the Cyrillic glyphs in a fixed width format</li>
+</ul>
+<h5 id="armenian-character-set">Armenian Character Set</h5>
+<ul>
+<li>Modified curves in uni0531, uni0532, uni0533, uni0534, uni0535, uni0536, uni0538, uni0539, uni053A, uni053B, uni053D, uni053E, uni053F, uni0540, uni0541, uni0542, uni0543, uni0544, uni0545, uni0546, uni0547, uni0548, uni0549, uni054A, uni054B, uni054C, uni054D, uni054E, uni054F, uni0550, uni0551, uni0553, uni0554, uni0555, uni0556, uni0561, uni0562, uni0563, uni0564, uni0565, uni0566, uni0568, uni0569, uni056A, uni056B, uni056D, uni056E, uni056F, uni0570, uni0571, uni0572, uni0573, uni0574, uni0575, uni0576, uni0577, uni0578, uni0579, uni057A, uni057B, uni057C, uni057D, uni057E, uni057F, uni0580, uni0581, uni0583, uni0584, uni0585, uni0586, uni0587</li>
+<li>Modified <strong>uni0563</strong> - decreased width of the upper terminal to create angle</li>
+<li>Modified <strong>uni0564</strong> - decreased width of the upper terminal to create angle</li>
+<li>Modified <strong>uni0566</strong> - decreased width of the upper terminal to create angle</li>
+<li>Modified <strong>uni0568</strong> - decreased width of the upper terminal to create angle</li>
+<li>Modified <strong>uni0569</strong> - decreased width of the upper terminal to create angle</li>
+<li>Modified <strong>uni0572</strong> - decreased width of the upper terminal to create angle</li>
+<li>Modified <strong>uni0573</strong> - decreased width of the upper terminal to create angle</li>
+<li>Modified <strong>uni0574</strong> - decreased width of the upper terminal to create angle</li>
+<li>Modified <strong>uni0576</strong> - decreased width of the upper terminal to create angle</li>
+<li>Modified <strong>uni0578</strong> - decreased width of the upper terminal to create angle</li>
+<li>Modified <strong>uni057C</strong> - decreased width of the upper terminal to create angle</li>
+<li>Modified <strong>uni057D</strong> - decreased width of the upper terminal to create angle</li>
+<li>Modified <strong>uni0580</strong> - decreased width of the upper terminal to create angle</li>
+<li>Modified <strong>uni0581</strong> - decreased width of the upper terminal to create angle</li>
+<li>Modified <strong>uni0584</strong> - decreased width of the upper terminal to create angle</li>
+</ul>
+<h5 id="georgian-character-set">Georgian Character Set</h5>
+<ul>
+<li>Modified curves in uni10D0, uni10D1, uni10D2, uni10D3, uni10D4, uni10D5, uni10D6, uni10D7, uni10D8, uni10D9, uni10DA, uni10DB, uni10DC, uni10DD, uni10DE, uni10DF, uni10E0, uni10E1, uni10E2, uni10E3, uni10E4, uni10E5, uni10E6, uni10E7, uni10E8, uni10E9, uni10EA, uni10EB, uni10EC, uni10ED, uni10EE, uni10EF, uni10F0, uni10F1, uni10F2, uni10F3, uni10F4, uni10F5, uni10F6, uni10F7, uni10F8, uni10F9, uni10FA, uni10FC, uni055C, uni055E</li>
+<li>Rounded corners of points in uni10FB, uni0589</li>
+</ul>
+<h5 id="punctuation-character-set">Punctuation Character Set</h5>
+<ul>
+<li>Modified curves in uni2047, questiondown, uni203D, uni203F, uni2048, uni2049, uni204B, uni2E18, uni2E1F, uni2E2E, uni2E18.case, questiondown.case, uni208E, uni207E, uni2768, uni2769, uni276B, uni27C5, uni27C6, uni2987, uni2988, uni055C, uni055E, uni061F, H18533, circle, uni25EF, uni25D0, uni25D1, uni25D2, uni25D3, uni25D6, uni25D7, uni25D4, uni25D5, uni25F4, uni25F5, uni25F6, uni25F7, uni25CD, uni25C9, uni25CE, openbullet, invbullet, invcircle, uni25DA, uni25DB, uni25E0, uni25E1, uni25DC, uni25DD, uni25DE, uni25DF, ampersand, copyright, registered, section, degree</li>
+<li>Modified <strong>dong</strong> - decreased width of the lower terminal to create an angled stem</li>
+<li>Modified <strong>uni20A5</strong> - decreased width of the upper terminal to create an angled stem</li>
+<li>Modified <strong>uni225D</strong> - decreased width of the lower terminal on the d character to create an angled stem</li>
+<li>Modified <strong>uni225E</strong> - decreased width of the upper terminal to create an angled stem</li>
+</ul>
+<h5 id="symbol-character-set">Symbol Character Set</h5>
+<ul>
+<li>Modified curves in cent, colonmonetary, dong, euro, florin, lira, peseta, sterling, uni0E3F, uni20A0, uni20A2, uni20A5, uni20A8, uni20AA, uni20AF, uni20B0, uni20B1, uni20B2, uni20B4, uni20B5, uni20B9, approxequal, asciitilde, circlemultiply, circleplus, congruent, element, emptyset, infinity, integral, integralbt, integraltp, intersection, notelement, notsubset, partialdiff, percent, perthousand, propersubset, propersuperset, proportional, reflexsubset, reflexsuperset, similar, suchthat, therefore, uni2031, uni2126, uni2201, uni220A, uni220C, uni220D, uni2218, uni221B, uni222C, uni222D, uni2235, uni2236, uni2237, uni2238, uni2239, uni223A, uni223B, uni223D, uni2241, uni2242, uni2243, uni2244, uni2246, uni2247, uni2249, uni224A, uni224B, uni224C, uni224E, uni224F, uni2250, uni2251, uni2252, uni2253, uni2254, uni2255, uni2256, uni2257, uni2258, uni225D, uni225E, uni225F, uni2272, uni2273, uni2274, uni2275, uni227C, uni227D, uni227E, uni227F, uni2285, uni2288, uni2289, uni228B, uni228D, uni2296, uni2298, uni2299, uni229A, uni229B, uni229C, uni229D, uni22B8, uni22CD, uni22D0, uni22D1, uni22DE, uni22DF, uni22E0, uni22E1, uni22E6, uni22E7, uni22E8, uni22E9, uni22EF, uni23A8, uni23AC, uni27DC, uni2A00, uni2A6A, uni2A6B, union, uni219C, uni219D, uni21AD, uni21A9, uni21AA, uni21AB, uni21AC, uni21B6, uni21B7, uni21BA, uni21BB, uni21F4, H18533, circle, uni25EF, uni25D0, uni25D1, uni25D2, uni25D3, uni25D6, uni25D7, uni25D4, uni25D5, uni25F4, uni25F5, uni25F6, uni25F7, uni25CD, uni25C9, uni25CE, openbullet, invbullet, invcircle, uni25DA, uni25DB, uni25E0, uni25E1, uni25DC, uni25DD, uni25DE, uni25DF, at, ampersand, copyright, registered, section, degree, uni0606, uni03F6</li>
+</ul>
+<h3 id="metrics-changes">Metrics Changes</h3>
+<ul>
+<li>Changed line gap / typo line gap to 275 units</li>
+<li>Modified <strong>uppercase P</strong> - increased right sidebearing to equal sidebearing of uppercase O glyph</li>
+<li>Modified <strong>uppercase Z</strong> - changed to right = left sidebearing (shifts orientation to left) for regular, bold, oblique sets</li>
+<li>Modified <strong>uppercase Z</strong> - reduced left sidebearing for bold oblique set, not necessary to make this equal as with above sets</li>
+<li>Modified <strong>lowercase a</strong> - reduced left sidebearing</li>
+<li>Modified <strong>lowercase c</strong> - reduced left sidebearing</li>
+<li>Modified <strong>lowercase e</strong> - increased left sidebearing</li>
+<li>Modified <strong>lowercase g</strong> - increased left sidebearing</li>
+<li>Modified <strong>lowercase i</strong> - increased left sidebearing</li>
+<li>Modified <strong>lowercase j</strong> - increased left sidebearing</li>
+<li>Modified <strong>lowercase k</strong> - reduced left sidebearing</li>
+<li>Modified <strong>lowercase r</strong> - reduced left sidebearing</li>
+<li>Modified <strong>3</strong> - increased left sidebearing</li>
+<li>Modified <strong>Zacute</strong> - centered glyph (reduced left sidebearing, increased right sidebearing)</li>
+<li>Modified <strong>Zcaron</strong> - centered glyph (reduced left sidebearing, increased right sidebearing)</li>
+<li>Modified <strong>Zdotaccent</strong> - centered glyph (reduced left sidebearing, increased right sidebearing)</li>
+<li>Modified <strong>aacute</strong> - increased left sidebearing</li>
+<li>Modified <strong>abreve</strong> - increased left sidebearing</li>
+<li>Modified <strong>acircumflex</strong> - increased left sidebearing</li>
+<li>Modified <strong>adieresis</strong> - increased left sidebearing</li>
+<li>Modified <strong>agrave</strong> - increased left sidebearing</li>
+<li>Modified <strong>amacron</strong> - increased left sidebearing</li>
+<li>Modified <strong>aogonek</strong> - increased left sidebearing</li>
+<li>Modified <strong>aring</strong> - increased left sidebearing</li>
+<li>Modified <strong>atilde</strong> - increased left sidebearing</li>
+<li>Modified <strong>kcommaaccent</strong> - decreased left sidebearing</li>
+<li>Modified <strong>racute</strong> - decreased left sidebearing</li>
+<li>Modified <strong>rcaron</strong> - decreased left sidebearing</li>
+<li>Modified <strong>rcommaaccent</strong> - decreased left sidebearing</li>
+<li>Mofified <strong>Mu</strong> - increased left sidebearing</li>
+<li>Modified <strong>Zeta</strong> - reduced left sidebearing to center the glyph</li>
+<li>Modified <strong>Rho</strong> - reduced left sidebearing</li>
+<li>Modified <strong>Phi</strong> - increased left sidebearing</li>
+<li>Modified <strong>left guillemet</strong> - increased right sidebearing</li>
+<li>Modified <strong>right guillemet</strong> - increased left sidebearing</li>
+<li>Modified <strong>left brace</strong> - increased right sidebearing</li>
+<li>Modified <strong>right brace</strong> - increased left sidebearing</li>
+<li>Modified <strong>left bracket</strong> - increased right sidebearing</li>
+<li>Modified <strong>right bracket</strong> - increased left sidebearing</li>
+<li>Modified <strong>left parenthesis</strong> - increased right sidebearing</li>
+<li>Modified <strong>right parenthesis</strong> - increased left sidebearing</li>
+<li>Adjusted spacing on all diacritic marks in the regular, bold, oblique, and bold oblique set</li>
+</ul>
+<h3 id="true-type-instructions-postscript-hinting">True Type Instructions / PostScript Hinting</h3>
+<ul>
+<li>New TrueType instructions / PostScript hinting across the entire glyph set</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Removed <strong>fi</strong> and <strong>fl</strong> ligatures. Spacing issues that require these ligatures are not present in this monospaced typeface</li>
+</ul>
+<h1 id="version-13">Version 1.3</h1>
+<h3 id="modified-glyphs_1">Modified Glyphs</h3>
+<ul>
+<li>Curve adjustments &amp; curve smoothing across all glyphs in the font collection</li>
+<li>hinting improvements</li>
+</ul>
+<h3 id="build-files">Build Files</h3>
+<ul>
+<li>New binary build system - should result in improved cross-platform compatibility for font binaries</li>
+</ul>
+<h1 id="version-12">Version 1.2</h1>
+<h3 id="modified-glyphs_2">Modified Glyphs</h3>
+<ul>
+<li>Modified <strong>lowercase i</strong> glyph. Removed serif and added curved tail</li>
+<li>Modified <strong>hyphen</strong> glyph. Widened</li>
+<li>Modified <strong>zero</strong> glyph. Adjusted alignment and shape of the oval fill</li>
+<li>Modified <strong>left parenthesis</strong> glyph. Increased right sidebearing length</li>
+<li>Modified <strong>right parenthesis</strong> glyph. Increased left sidebearing length</li>
+</ul>
+<h3 id="source">Source</h3>
+<ul>
+<li>Converted to UFO formatted source</li>
+</ul>
+<h1 id="version-101">Version 1.0.1</h1>
+<ul>
+<li>Modified the SIL license to permit dual licensing with the Bitstream Vera license.  This modification removed the stipulation that multiple licenses are not possible (preamble and section #5) and was intended to create the new Reserved Font Name Hack for this typeface modification and preserve the right (for myself and others) to define Reserved Font Names for all future fonts derived from this typeface.  There are no other modifications to either license under which this font is released.</li>
+<li>This release did not introduce changes to the glyphs included in the typeface</li>
+</ul>
+<h1 id="version-100">Version 1.0.0</h1>
+<ul>
+<li>Branched Bitstream Vera Sans Mono 1.10 release</li>
+</ul>
+<h2 id="changes">Changes</h2>
+<h3 id="new-glyphs_1">New Glyphs</h3>
+<ul>
+<li>New <strong>exclamation point</strong> glyph. Circular full stop point, tapered line, increased weight relative to other characters.</li>
+<li>New <strong>asterisk</strong> glyph.  Glyph shape from Source Code Pro.  Modified vertical position of the glyph to orient closer to the ascender.</li>
+<li>New <strong>period</strong> glyph.  Circular full stop point, modified from square glyph.</li>
+<li>New <strong>comma</strong> glyph.  Rounded comma shape from Source Code Pro, modified from square glyph.</li>
+<li>New <strong>colon</strong> glyph. Circular colon points, modified from square points.</li>
+<li>New <strong>semicolon</strong> glyph. Circular point and rounded comma shape from Source Code Pro, increased vertical spacing between the shapes</li>
+</ul>
+<h3 id="modified-glyphs_3">Modified Glyphs</h3>
+<ul>
+<li>Modified <strong>percent</strong> glyph.  Increased line length and added vertical line ends.</li>
+<li>Modified <strong>zero</strong> glyph.  Changed circular fill to oval fill.</li>
+<li>Modified <strong>left square bracket</strong> glyph. Increased height of the glyph.</li>
+<li>Modified <strong>right square bracket</strong> glyph. Increased height of the glyph.</li>
+<li>Modified <strong>left curly bracket</strong> glyph.  Modified vertical position, increased length of the horizontal stem, decreased left sidebearing</li>
+<li>Modified <strong>right curly bracket</strong> glyph. Modified vertical position, increased length of the horizontal stem, decreased right sidebearing</li>
+<li>Modified <strong>question mark</strong> glyph.  Changed square full stop point to circular full stop point.</li>
+<li>Modified <strong>hyphen</strong> glyph. Raised vertical alignment to center <code>-&gt;</code> character combinations.</li>
+</ul>
+<h3 id="font-styles">Font Styles</h3>
+<ul>
+<li><strong>Regular</strong> - includes all changes indicated above</li>
+<li><strong>Regular Oblique</strong> - includes all changes indicated above</li>
+<li><strong>Bold</strong> - includes all changes indicated above</li>
+<li><strong>Bold Oblique</strong> - includes all changes indicated above</li>
+</ul></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//fastly.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../../../.."</script>
+    
+    <script src="../../../../../js/base.js"></script>
+    <script src="../../../../js/mathjax.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
